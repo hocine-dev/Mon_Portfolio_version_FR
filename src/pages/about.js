@@ -39,10 +39,10 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About Hocine Dev</title>
+        <title>À propos de Moi</title>
         <meta
           name="description"
-          content="Je Suis Hocine Dev, un développeur Web Basé à Tizi Ouzou,Je Suis spécialisée dans la création de site Internet vitrine, de boutique en ligne (E-commerce), de publicité sur internet et conseils en marketing digital."
+          content="Hocine HAMAMA, développeur web Full Stack avec 7 ans d'expérience, vous aide à créer des sites web professionnels (vitrine, e-commerce, applications). Services sur mesure, SEO, design responsive, sécurité et performance. Contactez-moi pour un site clé en main."
         ></meta>
         <meta
           name="viewport"
@@ -55,22 +55,22 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center lg:mt-5">
         <Layout className="pt-16 xs:p-0 xs:pt-16">
           <AnimatedText
-            text="Know More About Me"
+            text="En savoir plus sur moi"
             className="mb-16 lg:!text-4xl  xs:!text-4xl"
           />
           <div className="grid w-full grid-cols-8 gap-16 ">
             <div className=" xs:min-w-[100vw] col-span-3 flex flex-col items-start justify-start xs:col-span-5 sm:col-span-8 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 xs:ps-5 xs:w-full xs:text-center">
-                Biography
+              À propos de Moi
               </h2>
               <p className="font-medium xs:px-5">
-                Je m'appelle Hocine, développeur web full-stack basé au Havre,
-                en France, avec plus de 7 ans d'expérience dans le développement
-                de sites web. Doté d'un large éventail de compétences
-                techniques, je vous aide à concevoir un site web professionnel
-                qui propulse votre présence dans le monde numérique. N'hésitez
-                pas à me contacter pour discuter de votre projet et transformer
-                vos idées en réalité digitale.
+                Je m&apos;appelle Hocine, développeur web full-stack basé au
+                Havre, en France, avec plus de 7 ans d&apos;expérience dans le
+                développement de sites web. Doté d&apos;un large éventail de
+                compétences techniques, je vous aide à concevoir un site web
+                professionnel qui propulse votre présence dans le monde
+                numérique. N&apos;hésitez pas à me contacter pour discuter de
+                votre projet et transformer vos idées en réalité digitale.
               </p>
             </div>
             <div className="md:max-w-[50vw] md:mx-auto xs:min-w-[80vw] xs:mx-[10%] xs:col-span-5 sm:col-span-8 md:col-span-8 col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
@@ -90,7 +90,7 @@ const About = () => {
                   {<AnimatedNumbers value={50} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  satisfied clients
+                Clients satisfaits
                 </h2>
               </div>
               <div className="flex flex-col items-end xs:!items-center justify-center sm:items-center md:items-center">
@@ -98,7 +98,7 @@ const About = () => {
                   {<AnimatedNumbers value={100} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  Projects completed
+                Projets réalisés
                 </h2>
               </div>
               <div className="flex flex-col items-end xs:!items-center justify-center sm:items-center md:items-center">
@@ -106,7 +106,7 @@ const About = () => {
                   {<AnimatedNumbers value={6} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  Years of Experience
+                Années d'expérience
                 </h2>
               </div>
             </div>
