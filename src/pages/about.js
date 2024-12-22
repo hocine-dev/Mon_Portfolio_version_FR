@@ -64,7 +64,7 @@ const About = () => {
               À propos de Moi
               </h2>
               <p className="font-medium xs:px-5">
-                Je m&apos;appelle Hocine, développeur web full-stack basé au
+                Je m&apos;appelle Hocine, je suis un développeur web full-stack basé au
                 Havre, en France, avec plus de 7 ans d&apos;expérience dans le
                 développement de sites web. Doté d&apos;un large éventail de
                 compétences techniques, je vous aide à concevoir un site web
@@ -95,7 +95,7 @@ const About = () => {
               </div>
               <div className="flex flex-col items-end xs:!items-center justify-center sm:items-center md:items-center">
                 <span className="inline-block text-7xl front-bold lg:text-6xl">
-                  {<AnimatedNumbers value={100} />}+
+                  {<AnimatedNumbers value={50} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                 Projets réalisés
