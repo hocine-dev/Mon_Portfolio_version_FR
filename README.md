@@ -1,45 +1,60 @@
-# Next.Js Website Tutorial: Create a Stunning Portfolio Website with Nextjs, Tailwind CSS and Framer-motion🌟
+# Mon Portfolio Version FR
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+## Description du projet
+Ce projet consiste à transformer mon portfolio de l'anglais vers une version en français. Il inclut la traduction des textes et l'adaptation des éléments visuels pour un public francophone. L'objectif est d'offrir une expérience utilisateur fluide et professionnelle en français.
 
-This repository contains starter code for Portfolio website created using NextJs. <br />
+## Fonctionnalités
+- Traduction complète du contenu du portfolio de l'anglais vers le français.
+- Adaptation des éléments visuels pour mieux correspondre aux attentes des utilisateurs francophones.
+- Design responsive pour garantir une bonne expérience sur tous les appareils (ordinateurs, tablettes, smartphones).
+- Utilisation de **Next.js** pour une architecture optimisée côté serveur et côté client.
+- **Tailwind CSS** pour une personnalisation rapide et flexible du design avec une approche utilitaire.
 
-For Demo and Final Code checkout following link👇: <br />
-[Nextjs Portfolio Website](https://devdreaming.com//videos/nextjs-tutorial-build-portfolio-tailwind-css-framer-motion#code-links) <br />
+## Installation
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-https://youtu.be/Yw7yWHigGKI <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/Yw7yWHigGKI?style=social)](https://youtu.be/Yw7yWHigGKI)<br />
+### Prérequis
+Avant de commencer, assurez-vous d'avoir installé **Node.js** et **npm** sur votre machine.
 
-<h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://www.buymeacoffee.com/CodeBucks" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br />
+1. Clonez le repository :
+    ```bash
+    git clone https://github.com/hocine-dev/Mon_Portfolio_version_FR.git
+    ```
+2. Accédez au dossier du projet :
+    ```bash
+    cd Mon_Portfolio_version_FR
+    ```
+3. Installez les dépendances avec npm :
+    ```bash
+    npm install
+    ```
+4. Lancez le serveur de développement :
+    ```bash
+    npm run dev
+    ```
+5. Ouvrez votre navigateur et accédez à [http://localhost:3000](http://localhost:3000) pour voir le portfolio en version française.
 
-### Images of The Portfolio Website:
+## Technologies utilisées
+- **Next.js** : Framework React pour un rendu côté serveur optimisé.
+- **Tailwind CSS** : Framework CSS utilitaire pour une personnalisation rapide et réactive du design.
+- **React** : Bibliothèque JavaScript pour la création d'interfaces utilisateur dynamiques.
+- **HTML5**, **CSS3**, **JavaScript**
 
-![Nextjs Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-light-desktop.png)
-![Nextjs Portfolio Website Dark Mode](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-dark-desktop.png)
-![Next.js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-desktop.png)
-![Next js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-dark-desktop.png)
-![Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-desktop.png)
-![Responsive Portfolio Website In Nextjs](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-mobile.png)
-![Responsive Portfolio Website In Next js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-light-mobile.png)
-![Mobile Responsive Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-mobile.png)
+## Contribution
+Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une pull request. Toute contribution est la bienvenue !
 
-
-### Resources Used in This Project
-
-- Profile image in the home page created by using https://www.midjourney.com/ tool.
-- Profile image in the about page by [Albert Dera](https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
-on [Unsplash](https://unsplash.com/photos/ILip77SbmOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-- Fonts from https://fonts.google.com/ <br />
-- Icons from https://iconify.design/ <br />
-- LightBulb Svg from https://lukaszadam.com/illustrations <br />
-
-### External Libraries used in this project:
-
-- [framer-motion](https://www.framer.com/motion/) <br />
-- [Tailwind css](https://tailwindcss.com/) <br />
-
-
+Pour soumettre une contribution :
+1. Fork ce repository.
+2. Créez une branche pour votre fonctionnalité :
+    ```bash
+    git checkout -b feature/ma-fonctionnalite
+    ```
+3. Effectuez vos changements et ajoutez des tests si nécessaire.
+4. Commitez vos changements :
+    ```bash
+    git commit -am 'Ajout d'une fonctionnalité'
+    ```
+5. Poussez la branche :
+    ```bash
+    git push origin feature/ma-fonctionnalite
+    ```
+6. Ouvrez une pull request.
