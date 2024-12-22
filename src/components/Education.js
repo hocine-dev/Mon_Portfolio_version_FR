@@ -54,7 +54,7 @@ const Education = () => {
 
           <Details
             position="Licence Informatique"
-            company="UMMTO"
+            company="Université de Tizi-Ouzou"
             time="2021-2024"
             work="Licence en Informatique de l'Université Mouloud Mammeri de Tizi-Ouzou"
           />
