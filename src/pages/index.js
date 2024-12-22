@@ -36,10 +36,6 @@ export default function Home() {
           name="description"
           content="Hocine HAMAMA, développeur web Full Stack avec 7 ans d'expérience, vous aide à créer des sites web professionnels (vitrine, e-commerce, applications). Services sur mesure, SEO, design responsive, sécurité et performance. Contactez-moi pour un site clé en main."
         />
-        <meta
-          name="google-site-verification"
-          content="zwvBd7kHHWhKEObp6vwWEf3LhnqbmAYhPJq1U51B7Jo"
-        />
       </Head>
 
       <TransitionEffect></TransitionEffect>
@@ -77,7 +73,7 @@ export default function Home() {
                   className={`xs:!text-sm xs:px-1 hover:dark:border-light hover:dark:bg-dark hover:dark:text-light dark:bg-light dark:text-dark flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                   hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark`}
                 >
-                  My Resume
+                  Télécharger Mon CV
                   <span style={{ fontSize: 30, paddingLeft: 5 }}>&#8595;</span>
                 </Link>
                 <Link
@@ -90,7 +86,7 @@ export default function Home() {
                   className={`xs:!text-sm xs:px-1 hover:dark:border-light hover:dark:bg-dark hover:dark:text-light flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                   hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark`}
                 >
-                  Contact Me
+                  Contactez Moi
                 </Link>
               </div>
             </div>
