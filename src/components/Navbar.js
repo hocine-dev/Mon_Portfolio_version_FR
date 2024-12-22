@@ -194,7 +194,7 @@ const Navbar = () => {
                 ? ` my-4  ${navbar.border_show}`
                 : ` my-4  ${navbar.border}`
             }
-            title={"Home"}
+            title={"Accueil"}
             toggle={handelClick}
           />
             
@@ -218,7 +218,7 @@ const Navbar = () => {
                 ? ` my-2 ${navbar.border_show}`
                 : ` my-2 ${navbar.border}`
             }
-            title={"Projects"}
+            title={"Mes Projets"}
             toggle={handelClick}
             />
           <CustomMobileLink
@@ -228,7 +228,7 @@ const Navbar = () => {
                 ? ` my-2 ${navbar.border_show}`
                 : ` my-2 ${navbar.border} mb-5`
             }
-            title={"Blog"}
+            title={"Mon Blog"}
             toggle={handelClick}
             />
         </nav>
