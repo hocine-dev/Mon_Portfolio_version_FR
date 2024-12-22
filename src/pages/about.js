@@ -106,7 +106,7 @@ const About = () => {
                   {<AnimatedNumbers value={6} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                Années d'expérience
+                Années d&apos;expérience
                 </h2>
               </div>
             </div>
