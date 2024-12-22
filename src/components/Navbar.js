@@ -206,7 +206,7 @@ const Navbar = () => {
                 ? ` my-2 ${navbar.border_show}`
                 : ` my-2 ${navbar.border}`
             }
-            title={"About"}
+            title={"A Propos de Moi"}
             toggle={handelClick}
           />
             
