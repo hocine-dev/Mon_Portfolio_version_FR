@@ -40,7 +40,7 @@ const Education = () => {
         Education
       </h2>
 
-      <div className="w-[75] mx-auto relative">
+      <div className="mx-2.5 relative">
 
 
         <motion.div style={{scaleY:scrollYProgress}}  ref={ref} className=" absolute -left-8 top-0 w-[4px] h-full bg-dark origin-top"/>
