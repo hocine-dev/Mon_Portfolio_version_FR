@@ -10,7 +10,7 @@ import HomeStyle from "../styles/Home.module.css";
 const Footer = () => {
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg ">
-      <Layout className="py-8 p-6 flex items-center justify-between lg:flex lg:flex-col xs:p-1">
+      <Layout className="py-8 p-6 flex items-center  lg:flex lg:flex-col xs:p-1 justify-evenly">
         <span className="flex xs:text-sm xs:min-w-[100vw] xs:mt-5 xs:justify-center">
           © 2025 Créé avec&nbsp;
           <Image
