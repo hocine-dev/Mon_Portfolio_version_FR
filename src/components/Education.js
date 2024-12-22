@@ -48,23 +48,18 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:w-[90%] last:mb-5">
         <Details
-            position="Bachelor's degree In Computer Science"
+            position="Licence Informatique"
             company="UMMTO"
             time="2021-2024"
-            work="Bachelor's degree In Computer Science from the university of Mouloud Mammeri Tizi-Ouzou"
+            work="Licence en Informatique de l'Université Mouloud Mammeri de Tizi-Ouzou"
           />
           <Details
-            position="Master's degree In Civil Engineering"
-            company="UMMTO"
-            time="2013-2015"
-            work="Master's degree In Civil Engineering from the university of Mouloud Mammeri Tizi-Ouzou"
+            position="Licence Informatique"
+            company="Université du havre"
+            time="2024-2025"
+            work="Actualment je prépare ma Licence en Informatique de l'Université du Havre en France"
           />
-          <Details
-            position="Bachelor's degree In Civil Engineering"
-            company="UMMTO"
-            time="2010-2013"
-            work="Bachelor's degree In Civil Engineering from the university of Mouloud Mammeri Tizi-Ouzou"
-          />
+         
         </ul>
       </div>
     </div>
