@@ -55,16 +55,16 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center lg:mt-5">
         <Layout className="pt-16 xs:p-0 xs:pt-16">
           <AnimatedText
-            text="En savoir plus sur moi"
+            text="Know More About Me"
             className="mb-16 lg:!text-4xl  xs:!text-4xl"
           />
           <div className="grid w-full grid-cols-8 gap-16 ">
             <div className=" xs:min-w-[100vw] col-span-3 flex flex-col items-start justify-start xs:col-span-5 sm:col-span-8 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 xs:ps-5 xs:w-full xs:text-center">
-              Qui je suis?
+                Biography
               </h2>
               <p className="font-medium xs:px-5">
-                Je m'appelle Hocine, je suis un développeur web full-stack basé au Havre,
+                Je m'appelle Hocine, développeur web full-stack basé au Havre,
                 en France, avec plus de 7 ans d'expérience dans le développement
                 de sites web. Doté d'un large éventail de compétences
                 techniques, je vous aide à concevoir un site web professionnel
@@ -90,23 +90,23 @@ const About = () => {
                   {<AnimatedNumbers value={50} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                Clients satisfaits
+                  satisfied clients
                 </h2>
               </div>
               <div className="flex flex-col items-end xs:!items-center justify-center sm:items-center md:items-center">
                 <span className="inline-block text-7xl front-bold lg:text-6xl">
-                  {<AnimatedNumbers value={50} />}+
+                  {<AnimatedNumbers value={100} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                Projets réalisés
+                  Projects completed
                 </h2>
               </div>
               <div className="flex flex-col items-end xs:!items-center justify-center sm:items-center md:items-center">
                 <span className="inline-block text-7xl front-bold lg:text-6xl">
-                  {<AnimatedNumbers value={7} />}+
+                  {<AnimatedNumbers value={6} />}+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                Années d'expérience
+                  Years of Experience
                 </h2>
               </div>
             </div>
