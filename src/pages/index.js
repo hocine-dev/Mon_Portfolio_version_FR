@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hocine HAMAMA | Full Stack Web Developer</title>
+        <title>Hocine HAMAMA | Développeur Web Full Stack</title>
         <meta
           name="description"
           content="Hocine HAMAMA, développeur web Full Stack avec 7 ans d'expérience, vous aide à créer des sites web professionnels (vitrine, e-commerce, applications). Services sur mesure, SEO, design responsive, sécurité et performance. Contactez-moi pour un site clé en main."
@@ -79,8 +79,8 @@ export default function Home() {
                 <Link
                   href={
                     IsMobile
-                      ? "https://wa.me/16145059642"
-                      : "https://web.whatsapp.com/send?phone=16145059642"
+                      ? "https://wa.me/33651859944"
+                      : "https://web.whatsapp.com/send?phone=33651859944"
                   }
                   target="blank"
                   className={`xs:!text-sm xs:px-1 hover:dark:border-light hover:dark:bg-dark hover:dark:text-light flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold

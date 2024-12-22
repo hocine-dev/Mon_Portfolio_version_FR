@@ -107,7 +107,7 @@ const Navbar = () => {
                 : ` mr-4 ${navbar.border}`
             }
           >
-            Home
+          Accueil
           </Link>
           <Link
             href={"/about"}
@@ -117,7 +117,7 @@ const Navbar = () => {
                 : ` m-4 ${navbar.border}`
             }
           >
-            About
+            À propos de Moi
           </Link>
           <Link
             href={"/projects"}
@@ -127,7 +127,7 @@ const Navbar = () => {
                 : ` m-4 ${navbar.border}`
             }
           >
-            Projects
+            Mes Projets
           </Link>
           <Link
             href={"/blog"}
@@ -137,7 +137,7 @@ const Navbar = () => {
                 : ` ml-4 ${navbar.border}`
             }
           >
-            Blog
+            Mon Blog
           </Link>
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
