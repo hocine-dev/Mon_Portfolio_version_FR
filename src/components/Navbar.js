@@ -35,7 +35,7 @@ const Navbar = () => {
     
     <span className={`h-[0px] inline-block bg-dark
      left-0 -bottom-0.5
-    group-hover:w-full transition- [width] ease duration-300 ${router.asPath === href? "w-full": "w-0"}
+    group-hover:w-full transition- [width] ease duration-300 ${router.asPath === href? "w-full": "w-full"}
     dark:bg-light`}>{title}
     </span>
       </button>)}
