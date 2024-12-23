@@ -44,7 +44,7 @@ const Education = () => {
           className=" absolute -left-8 top-0 w-[4px] h-full bg-dark origin-top"
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:w-[90%] last:mb-5">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:w-[90%] last:mb-5 ml-20">
           <Details
             position="Licence Informatique"
             company="Université du havre"
@@ -58,6 +58,7 @@ const Education = () => {
             time="2021-2024"
             work="Licence en Informatique de l'Université Mouloud Mammeri de Tizi-Ouzou"
           />
+          
         </ul>
       </div>
     </div>
