@@ -118,7 +118,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Quelques projets que j'ai réalisés</title>
+        <title>Quelques projets que j&apos;ai réalisés</title>
         <meta
           name="description"
           content="Explore my impressive web developer portfolio  expert in HTML, CSS, JS, and responsive design. Hire me for your next project"
@@ -137,8 +137,8 @@ const projects = () => {
           <div className="grid grid-cols-12 gab-24 gap-y-16">
             <div className="col-span-12 xs:min-w-[90vw] sm:min-w-[90vw] xs:-ms-[3rem] sm:-ms-[3rem] md:min-w-[90vw] md:-ms-[3rem]">
               <FeaturedProject
-                title="Healthy Food Store"
-                summary=" a healthy food website using cutting-edge technologies. The website is built with a responsive design, incorporating HTML5, CSS3, and JavaScript for a seamless user experience."
+                title="Produits Prganic"
+                summary="Un site web de nourriture saine utilisant des technologies de pointe. Le site est conçu avec un design responsive, intégrant HTML5, CSS3 et JavaScript pour une expérience utilisateur fluide."
                 link="https://myorganic-food.netlify.app/"
                 img={p4}
                 type="Web Site"
