@@ -51,7 +51,7 @@ const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
         </Link>
         <p className="my-2 font-medium text-dark">{summary}</p>
         <span className="font-bold xs:flex xs:flex-col sm:flex sm:flex-col">
-          <span>Used Skills:</span>&nbsp;
+          <span>compétences:</span>&nbsp;
           <span className="text-primary font-bold break-all">{tech}</span>
         </span>
         <br></br>
@@ -61,7 +61,7 @@ const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
             target="blank"
             className="ml-4 bg-dark rounded text-light p-2 px-6 text-lg font-semibold"
           >
-            Project Link
+          Lien vers le projet
           </Link>
         </span>
       </div>
@@ -98,7 +98,7 @@ const Project = ({ type, title, summary, img, link, tech }) => {
         </Link>
         <p className="my-2 font-medium text-dark">{summary}</p>
         <span className="font-bold">
-          Used Skills:&nbsp;
+        compétences:&nbsp;
           <span className="text-primary font-bold ">{tech}</span>
         </span>
         <br></br>
@@ -107,7 +107,7 @@ const Project = ({ type, title, summary, img, link, tech }) => {
           target="blank"
           className="ml-4 bg-dark rounded text-light p-2 px-6 text-lg font-semibold"
         >
-          Project Link
+          Lien vers le projet
         </Link>
       </div>
     </article>
@@ -118,7 +118,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Explore my impressive Projects</title>
+        <title>Quelques projets que j'ai réalisés</title>
         <meta
           name="description"
           content="Explore my impressive web developer portfolio  expert in HTML, CSS, JS, and responsive design. Hire me for your next project"
@@ -130,7 +130,7 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center lg:mt-5">
         <Layout className="pt-16">
           <AnimatedText
-            text="Some Of My Projects"
+            text="Quelques projets que j'ai réalisés"
             className="mb-16 xs:!text-3xl"
           />
 
