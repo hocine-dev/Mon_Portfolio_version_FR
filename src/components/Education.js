@@ -4,7 +4,7 @@ import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, time, work }) => {
   return (
-    <li className="my-8 first:mt-0 last:mb-0 xs:mx-0 mx-auto flex flex-col items-center justify-between  ">
+    <li className="my-8 first:mt-0 last:mb-0 xs:mx-0 mx-0 flex flex-col items-center justify-between  ">
       <LiIcon className="xs:hidden" />
       <motion.div
         initial={{ y: 50 }}
@@ -44,7 +44,7 @@ const Education = () => {
           className=" absolute -left-8 top-0 w-[4px] h-full bg-dark origin-top"
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-0 xs:w-[90%] last:mb-5">
+        <ul className="w-full flex flex-col items-start justify-between ml-20 xs:w-[90%] last:mb-5">
           <Details
             position="Licence Informatique"
             company="Université du Havre"
