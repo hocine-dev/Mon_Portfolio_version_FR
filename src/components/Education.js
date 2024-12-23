@@ -44,21 +44,19 @@ const Education = () => {
           className=" absolute -left-8 top-0 w-[4px] h-full bg-dark origin-top"
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:w-[90%] last:mb-5 ml-20">
+        <ul className="w-full flex flex-col items-start justify-between ml-0 xs:w-[90%] last:mb-5">
           <Details
             position="Licence Informatique"
-            company="Université du havre"
+            company="Université du Havre"
             time="2024-2025"
             work="Actualment je prépare ma Licence en Informatique de l'Université du Havre en France"
           />
-
           <Details
             position="Licence Informatique"
             company="Université de Tizi-Ouzou"
             time="2021-2024"
             work="Licence en Informatique de l'Université Mouloud Mammeri de Tizi-Ouzou"
           />
-          
         </ul>
       </div>
     </div>
