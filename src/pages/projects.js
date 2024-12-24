@@ -187,8 +187,8 @@ const projects = () => {
             </div>
             <div className="col-span-12 xs:min-w-[90vw] xs:-ms-[3rem] sm:min-w-[90vw] sm:-ms-[3rem] md:min-w-[90vw] md:-ms-[3rem]">
               <FeaturedProject
-                title="Dz-Dev Company Website"
-                summary="A Very Nice One-Page Website That Describes A Web Development Company, The Web Site Has A Very Nice Design And Is Responsive On All Devices, And Contained All Necessity Information About The Company."
+                title="Agence web"
+                summary="Un site web one-page très agréable qui présente une entreprise de développement web. Le site dispose d'un design soigné, est responsive sur tous les appareils et contient toutes les informations essentielles sur l'entreprise."
                 link="https://dz-dev.netlify.app/"
                 img={p1}
                 type="Web Site"
@@ -197,8 +197,8 @@ const projects = () => {
             </div>
             <div className="col-span-6 me-10 xs:hidden sm:hidden md:hidden ">
               <Project
-                title="Password Generator App"
-                summary="A Single-Page Application That Let Users Generate A Custom Password With The Desired Length And Choose To Include Uppercase Lowercase Numbers And Symbols, The App Is Very Fast And Useful."
+                title="Générateur de Mots de Passe"
+                summary="Une application monopage qui permet aux utilisateurs de générer un mot de passe personnalisé avec la longueur souhaitée et de choisir d'inclure des majuscules, minuscules, chiffres et symboles. L'application est très rapide et pratique."
                 link="https://password-generator-byhocinedev.netlify.app/"
                 img={p5}
                 type="Web App"
@@ -207,24 +207,15 @@ const projects = () => {
             </div>
             <div className="col-span-6 ms-10 xs:hidden sm:hidden md:hidden ">
               <Project
-                title="Cv Generator App"
-                summary="This Website Is A Spa That Let Users Generate A Nice Cv Online Just By Entering The Necessary Information,The User Has Also The Ability To Download The Generated Cv In A Pdf Format, And The Website Is Completely Responsive To All Devices."
+                title="Générateur de CV"
+                summary="Ce site web est une application monopage qui permet aux utilisateurs de générer un CV attrayant en ligne en saisissant simplement les informations nécessaires. L'utilisateur a également la possibilité de télécharger le CV généré au format PDF. Le site est entièrement responsive et s'adapte à tous les appareils."
                 link="https://cvgeneratorbyhocinedev.netlify.app/"
                 img={p6}
                 type="Web App"
                 tech="Html,Css,Javascript"
               />
             </div>
-            <div className="col-span-12 xs:min-w-[90vw] xs:-ms-[3rem] sm:min-w-[90vw] sm:-ms-[3rem] md:min-w-[90vw] md:-ms-[3rem]">
-              <FeaturedProject
-                title="React Travel App"
-                summary="A Nice Website For A Travel Agency, That Allows Users To See Available Destination And Make A Booking, The Web Site Is Very Clean And Responsive On All Devices."
-                link="https://hocinedev-travelapp.netlify.app/"
-                img={p7}
-                type="Web Site"
-                tech="Html,Css,Javascript,React"
-              />
-            </div>
+            
           </div>
         </Layout>
       </main>
