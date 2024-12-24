@@ -197,7 +197,7 @@ const projects = () => {
             </div>
             <div className="col-span-6 me-10 xs:hidden sm:hidden md:hidden ">
               <Project
-                title="Générateur de Mots de Passe"
+                title="Générateur de password"
                 summary="Une application monopage qui permet aux utilisateurs de générer un mot de passe personnalisé avec la longueur souhaitée et de choisir d'inclure des majuscules, minuscules, chiffres et symboles. L'application est très rapide et pratique."
                 link="https://password-generator-byhocinedev.netlify.app/"
                 img={p5}
