@@ -157,8 +157,8 @@ const projects = () => {
             </div>
             <div className="col-span-12 xs:min-w-[90vw] xs:-ms-[3rem] hidden xs:flex sm:flex sm:min-w-[90vw] sm:-ms-[3rem] md:flex md:min-w-[90vw] md:-ms-[3rem]">
               <FeaturedProject
-                title="Rayan Cano Portfolio Website"
-                summary="A Very Nice One-Page Website That Describes A Web Developer Profile, The Web Site Has A Very Nice Design Is Responsive On All Devices And Has All The Information About The Owner And A Contact Form."
+                title="Portfolio Website"
+                summary="Un site web one-page très agréable qui décrit le profil d'un développeur web. Le site dispose d'un design soigné, est responsive sur tous les appareils et contient toutes les informations sur le propriétaire ainsi qu'un formulaire de contact."
                 link="https://rayancano.netlify.app/"
                 img={p2}
                 type="Web Site"
@@ -177,8 +177,8 @@ const projects = () => {
             </div>
             <div className="col-span-6 ms-10 xs:hidden sm:hidden md:hidden ">
               <Project
-                title=" Food Additives Company Website"
-                summary="Using new technologies like nextjs, tailwindcss, I created a seamless user experience. With responsive design and optimized performance, the site adapts beautifully to any device."
+                title="site web pour une entreprise de produits alimentaires"
+                summary="En utilisant de nouvelles technologies comme Next.js et TailwindCSS, j'ai créé une expérience utilisateur fluide. Grâce à un design responsive et des performances optimisées, le site s'adapte parfaitement à tous les appareils."
                 link="https://grengou.com/"
                 img={p3}
                 type="Web Site"
