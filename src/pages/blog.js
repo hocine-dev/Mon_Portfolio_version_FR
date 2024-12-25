@@ -112,14 +112,14 @@ const blog = () => {
       <TransitionEffect></TransitionEffect>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden lg:mt-5">
         <Layout className="pt-16">
-          <AnimatedText text="words can change the world!" className="mb-16 xs:!text-2xl " />
+          <AnimatedText text="Les mots peuvent changer le monde !" className="mb-16 xs:!text-2xl " />
           <ul className="grid grid-cols-2 gap-16 xs:flex xs:flex-col xs:min-w-[90vw] xs:-ms-[3rem]  md:flex md:flex-col md:min-w-[90vw] md:-ms-[3rem] sm:flex sm:flex-col sm:min-w-[90vw] sm:-ms-[3rem]">
             <FeaturedArticle
               img={img1}
-              title="3 Best Multipurpose WordPress Themes for 2023"
+              title="Reconversion professionnelle en informatique En 2025"
               time="5 min read"
-              link="https://abon858.blogspot.com/2023/07/3-best-multipurpose-wordpress-themes.html"
-              summary="Discover the top 3 multipurpose WordPress themes that will help you build a responsive, user-friendly website with features you need for engaging visitors and improving conversions."
+              link="https://www.linkedin.com/pulse/reconversion-professionnelle-en-informatique-une-2025-hocine-hamama-bqaff"
+              summary="En 2025, l’informatique continue d’être l’un des secteurs les plus dynamiques et porteurs d’avenir. Avec l’essor constant de l’intelligence artificielle, du cloud computing, de la cybersécurité et de la transformation numérique des entreprises, les besoins en compétences techniques n’ont jamais été aussi importants."
             />
             <FeaturedArticle
               img={img2}
