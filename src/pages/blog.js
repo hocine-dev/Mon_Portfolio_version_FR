@@ -9,7 +9,6 @@ import img2 from "../../public/images/articles/img2.jpeg";
 import img3 from "../../public/images/articles/ImageAI.jpg";
 import img4 from "../../public/images/articles/img4.jpg";
 import img5 from "../../public/images/articles/img5.webp";
-import img6 from "../../public/images/articles/img6.webp";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import BackToTop from "@/components/BackToTop";
@@ -102,7 +101,7 @@ const blog = () => {
   return (
     <>
       <Head>
-        <title>Blog | Hocine Dev</title>
+        <title>Blog | Hocine HAMAMA</title>
         <meta
           name="description"
           content="Explore My blog for expert insights and trends in web development. Discover cutting-edge techniques, best practices, and industry updates to stay ahead in the ever-evolving world of web development."
