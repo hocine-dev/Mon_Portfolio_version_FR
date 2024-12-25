@@ -131,33 +131,28 @@ const blog = () => {
           </ul>
 
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            All Articles
+            Tout les articles
           </h2>
           <ul className="xs:min-w-[90vw] xs:-ms-[3rem] sm:min-w-[90vw] sm:-ms-[3rem] md:min-w-[90vw] md:-ms-[3rem]">
             <Article
-              title="Free AI Generated Images Vol 1"
+              title="L'importance du Cloud Hosting pour les entreprises"
               date="july 18;2023"
-              link="https://abon858.blogspot.com/2023/07/free-ai-generated-images-vol-1.html"
+              link="https://www.linkedin.com/pulse/limportance-du-cloud-hosting-pour-les-entreprises-hocine-hamama-lbq2f"
               img={img3}
             />
             <Article
-              title="Developer Productivity and The Definition of Developer Happiness"
+              title="Devenir développeur en 6 mois : un rêve ou une illusion ?"
               date="April 20;2023"
-              link="https://abon858.blogspot.com/2023/07/developer-productivity-and-definition.html"
+              link="https://www.linkedin.com/pulse/devenir-d%25C3%25A9veloppeur-en-6-mois-un-r%25C3%25AAve-ou-une-illusion-hocine-hamama-igipe"
               img={img4}
             />
             <Article
-              title="TypeScript for React Development"
+              title="Attention aux fausses annonces d'emploi sur LinkedIn !"
               date="may 21;2023"
-              link="https://abon858.blogspot.com/2023/07/typescript-for-react-development.html"
+              link="https://www.linkedin.com/pulse/attention-aux-fausses-annonces-demploi-sur-linkedin-hocine-hamama-xydqf"
               img={img5}
             />
-            <Article
-              title="How to Five Reasons to use Django"
-              date="June  12;2023"
-              link="https://abon858.blogspot.com/2023/07/five-reasons-to-use-django.html"
-              img={img6}
-            />
+           
           </ul>
         </Layout>
       </main>
