@@ -4,8 +4,8 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import img1 from "../../public/images/articles/wordpressthemes.jpg";
-import img2 from "../../public/images/articles/pixelloading.jpg";
+import img1 from "../../public/images/articles/img1.jpeg";
+import img2 from "../../public/images/articles/img2.jpeg";
 import img3 from "../../public/images/articles/ImageAI.jpg";
 import img4 from "../../public/images/articles/img4.jpg";
 import img5 from "../../public/images/articles/img5.webp";
@@ -46,7 +46,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         <span className="text-primary font-semibold">{time}</span>
         <span className="text-primary font-semibold">
           <Link href={link} target="blank">
-            Read More...
+          En savoir plus...
           </Link>
         </span>
       </div>
@@ -93,7 +93,7 @@ const Article = ({ img, title, date, link }) => {
     viewport={{once:true}}
     className="xs:flex xs:flex-col md:flex md:flex-col sm:flex sm:flex-col border-r-4 border-b-4 relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark">
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4 pt-5 xs:w-full"><a href={link} target="blank">Read More</a></span>
+      <span className="text-primary font-semibold pl-4 pt-5 xs:w-full"><a href={link} target="blank">En savoir plus</a></span>
     </motion.li>
   );
 };
@@ -117,16 +117,16 @@ const blog = () => {
             <FeaturedArticle
               img={img1}
               title="Reconversion professionnelle en informatique En 2025"
-              time="5 min read"
+              time="5 minute "
               link="https://www.linkedin.com/pulse/reconversion-professionnelle-en-informatique-une-2025-hocine-hamama-bqaff"
               summary="En 2025, l’informatique continue d’être l’un des secteurs les plus dynamiques et porteurs d’avenir. Avec l’essor constant de l’intelligence artificielle, du cloud computing, de la cybersécurité et de la transformation numérique des entreprises, les besoins en compétences techniques n’ont jamais été aussi importants."
             />
             <FeaturedArticle
               img={img2}
-              title="On-Scroll Pixelated Image Loading Effect"
-              time="3 min read"
-              link="https://abon858.blogspot.com/2023/07/on-scroll-pixelated-image-loading-effect.html"
-              summary="A recreation of the on-scroll pixelated image loading effect seen on Felicity Ingram’s website."
+              title="Le marché de l'emploi en tech en 2025 : à quoi s'attendre ?"
+              time="3 minute "
+              link="https://www.linkedin.com/pulse/le-march%C3%A9-de-lemploi-en-tech-2025-%C3%A0-quoi-sattendre-hocine-hamama-ndnaf"
+              summary="Alors que nous approchons de 2025, le marché de l’emploi en tech continue d’évoluer à un rythme effréné. Les avancées rapides dans des domaines tels que l’intelligence artificielle (IA), la cybersécurité et le cloud computing redéfinissent les attentes des entreprises et les compétences recherchées chez les candidats."
             />
           </ul>
 
