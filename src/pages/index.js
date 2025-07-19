@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import mainImg from "../../public/images/home/mainimg.jpg";
+import mainImg from "../../public/images/home/mainimg.png";
 import circularImg from "../../public/images/home/circular.png";
 import LightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import AnimatedText from "@/components/AnimatedText";
@@ -34,7 +34,8 @@ export default function Home() {
         <title>Hocine HAMAMA | Développeur Web Full Stack</title>
         <meta
           name="description"
-          content="Hocine HAMAMA, développeur web Full Stack avec 7 ans d'expérience, vous aide à créer des sites web professionnels (vitrine, e-commerce, applications). Services sur mesure, SEO, design responsive, sécurité et performance. Contactez-moi pour un site clé en main."
+          content="
+          Développeur Web Full-Stack freelance à Paris, expert en Next.js, React et SEO. Créez votre site web performant et optimisé pour les moteurs de recherche. Contactez-moi pour vos projets à Paris et Île-de-France."
         />
       </Head>
 
@@ -55,19 +56,16 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:min-w-[100vw] lg:text-center">
               <AnimatedText
-                text="Bonjour, je m'appelle Hocine HAMAMA"
+                text="Bonjour, je m'appelle Hocine"
                 className=" xs:!text-3xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl lg:p-1"
               />
 
               <p className="my-4 text-base font-medium !text-left xs:px-3">
-                Je suis développeur web Full Stack<br></br>Je travaille en tant
-                que freelance<br></br>
-                N&apos;hésitez pas à me contacter si vous avez besoin
-                d&apos;aide pour la creation de votre site web.
+                Je suis un <strong>développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong>sites web performants avec Next.js et React</strong>. Mon expertise inclut l&apos;<strong>optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier en <strong>Île-de-France</strong>, n&apos;hésitez pas à me contacter pour concrétiser vos projets web et attirer de nouveaux clients.
               </p>
               <div className="flex items-center  mt-2 w-full justify-evenly  lg:self-center xs:mt-5">
                 <Link
-                  href="/CV%20HAMAMA%20Hocine%20STAGE.pdf"
+                  href="/CV%20Hocine%20HAMAMA.pdf"
                   target="blank"
                   download={true}
                   className={`xs:!text-sm xs:px-1 hover:dark:border-light hover:dark:bg-dark hover:dark:text-light dark:bg-light dark:text-dark flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
@@ -103,14 +101,19 @@ export default function Home() {
               className="animate-spin-slow"
             ></Image>
 
-            <Link
-              href="https://web.whatsapp.com/send?phone=16145059642"
-              target="blank"
-              className={`hover:dark:border-light hover:dark:bg-dark hover:dark:text-light dark:bg-light dark:text-dark flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border-solid border-dark w-20 h-20 rounded-full font-semibold    hover:bg-light hover:text-dark  hover:border-dark hover:border-solid hover:border-2
+            <div
+              className={`hover:dark:border-light hover:dark:bg-dark hover:dark:text-light dark:bg-light dark:text-dark flex flex-col items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border-solid border-dark w-24 h-24 rounded-full font-semibold hover:bg-light hover:text-dark hover:border-dark hover:border-solid hover:border-2 transition-all duration-300
               `}
             >
-              Hire Me
-            </Link>
+              <div className="flex text-yellow-400 text-sm mb-1">
+                {"★★★★★"}
+              </div>
+              <span className="text-xs text-center leading-tight">
+                Service De
+                <br />
+                Qualité
+              </span>
+            </div>
           </div>
         </div>
 
