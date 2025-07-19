@@ -61,7 +61,7 @@ export default function Home() {
               />
 
               <p className="my-4 text-base font-medium !text-left xs:px-3">
-                Je suis un <strong>développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong>sites web performants avec Next.js et React</strong>. Mon expertise inclut l&apos;<strong>optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier en <strong>Île-de-France</strong>, n&apos;hésitez pas à me contacter pour concrétiser vos projets web et attirer de nouveaux clients.
+                Je suis un <strong>développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong>sites web performants avec Next.js et React js</strong>. Mon expertise inclut l&apos;<strong>optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier en <strong>Île-de-France</strong>, n&apos;hésitez pas à me contacter pour concrétiser vos projets web et attirer de nouveaux clients.
               </p>
               <div className="flex items-center  mt-2 w-full justify-evenly  lg:self-center xs:mt-5">
                 <Link
@@ -98,11 +98,11 @@ export default function Home() {
             <Image
               src={circularImg}
               alt="circular Img"
-              className="animate-spin-slow"
+              className="opacity-0"
             ></Image>
 
             <div
-              className={`hover:dark:border-light hover:dark:bg-dark hover:dark:text-light dark:bg-light dark:text-dark flex flex-col items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border-solid border-dark w-24 h-24 rounded-full font-semibold hover:bg-light hover:text-dark hover:border-dark hover:border-solid hover:border-2 transition-all duration-300
+              className={`hover:dark:border-light hover:dark:bg-dark hover:dark:text-light dark:bg-light dark:text-dark flex flex-col items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border-solid border-dark w-24 h-24 rounded-full font-semibold   hover:border-dark hover:border-solid hover:border-2 transition-all duration-300
               `}
             >
               <div className="flex text-yellow-400 text-sm mb-1">
