@@ -48,14 +48,15 @@ const Education = () => {
           <Details
             position="Licence Informatique"
             company="Université du Havre"
-            time="2024-2025"
-            work="Actualment je prépare ma Licence en Informatique de l'Université du Havre en France"
+            time="2021-2025"
+            work="Diplomé d'une licence en informatique de l'université le havre normandie, avec Cursus complet couvrant la programmation, l'architecture des systèmes et les réseaux, me dotant d'une vision globale.
+C'est le socle qui me permet de maîtriser aussi bien la logique back-end que les interactions complexes du front-end."
           />
           <Details
-            position="Licence Informatique"
-            company="Université de Tizi-Ouzou"
-            time="2021-2024"
-            work="Licence en Informatique de l'Université Mouloud Mammeri de Tizi-Ouzou"
+            position="Master Informatique"
+            company="Université du Havre"
+            time="2025-2027"
+            work="Formation axée sur les technologies de nouvelle génération pour architecturer les écosystèmes applicatifs de demain. L'objectif est de maîtriser la chaîne complète, de l'objet connecté (IoT) à l'application web distribuée, pour créer des solutions numériques intégrées et innovantes."
           />
         </ul>
       </div>

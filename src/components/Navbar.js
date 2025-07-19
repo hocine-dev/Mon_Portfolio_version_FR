@@ -6,21 +6,34 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import githubIcon from "../../public/images/svgs/logo-github.svg";
 import linkedinIcon from "../../public/images/svgs/linkedin.svg";
-import fiverrIcon from "../../public/images/svgs/fiverr.svg";
 import whatsappIcon from "../../public/images/svgs/whatsapp.svg";
 import { motion } from "framer-motion";
-import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
-
+import { useEffect } from "react";
 const Navbar = () => {
   const router = useRouter();
 
-  const [Mode, setMode] = useThemeSwitcher();
 
   const [IsOpen, setIsOpen] = useState(false);
 
   const handelClick = () => {
     setIsOpen(!IsOpen);
   };
+
+  useEffect(() => {
+    if (IsOpen) {
+      // Add the class to the body when the menu is open
+      document.body.classList.add('no-scroll');
+    } else {
+      // Remove the class when the menu is closed
+      document.body.classList.remove('no-scroll');
+    }
+
+    // Cleanup function: This will run if the component unmounts
+    // while the menu is open, ensuring the class is removed.
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [IsOpen]);
 
   const CustomMobileLink = ( {href, title, className="",toggle}) => { 
     const router = useRouter();
@@ -89,9 +102,7 @@ const Navbar = () => {
         ></span>
       </button>
       </div>
-      <div className="-mt-5 me-5 z-50">
-        <Logo />
-      </div> 
+      
 
       </header>
 
@@ -186,9 +197,11 @@ const Navbar = () => {
 {/* mobile navigation
  */}
      {IsOpen?
+
      
-     <div className="  min-w-[100vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2
-      -translate-y-[80%]  z-30 bg-light/80 rounded-lg backdrop-blur-md py-32 mt-12">
+     
+     <div className="  min-w-[100vw] flex flex-col justify-between items-center fixed top-full left-1/2 -translate-x-1/2
+      -translate-y-full h-screen  z-30 bg-light/80 rounded-lg backdrop-blur-md py-32 mt-12">
         <nav className="flex items-center justify-center flex-col">
           <CustomMobileLink
             href={"/"}

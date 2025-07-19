@@ -42,8 +42,18 @@ const Experience = () => {
           <Details
             position="Développeur Web Full Stack"
             company="Freelancer"
-            time="2017-Aujourd'hui"
-            work="En 7 ans d'expérience, j'ai développé des sites web et applications dynamiques, incluant des solutions e-commerce et des projets sur mesure. Compétent en front-end (HTML, CSS, JavaScript) et back-end (Node.js, PHP, Python), j'ai aussi travaillé sur l'optimisation des performances et l'intégration de solutions de paiement. Chaque projet a renforcé ma capacité à offrir des solutions adaptées aux besoins de mes clients."
+            time="2020-Aujourd'hui"
+            work="En tant que développeur freelance depuis 5 ans, j'ai conçu et développé des applications web complexes pour une clientèle variée (startups, PME, agences). Mon expertise s'articule autour des écosystèmes JavaScript et PHP pour livrer des solutions performantes et sur mesure.
+
+Principales réalisations :
+
+Architecture et développement de plateformes e-commerce à fort trafic avec Next.js, en optimisant les performances (Core Web Vitals) et en intégrant des systèmes de paiement complexes (Stripe, PayPal).
+
+Conception d'APIs RESTful robustes et sécurisées avec Symfony et Node.js (Express), pour alimenter des applications métiers et des tableaux de bord analytiques.
+
+Création d'interfaces utilisateur (UI) dynamiques et interactives avec React, en assurant une expérience utilisateur (UX) fluide et un design responsive.
+
+Pilotage de projets de refonte technique, en migrant des applications monolithiques vers des architectures plus modernes et maintenables."
           />
           
           

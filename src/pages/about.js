@@ -1,9 +1,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import avatar from "../../public/images/profile/avatar.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -63,26 +61,30 @@ const About = () => {
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 xs:ps-5 xs:w-full xs:text-center">
               À propos de Moi
               </h2>
-              <p className="font-medium xs:px-5">
-                Je m&apos;appelle Hocine, je suis un développeur web full-stack basé au
-                Havre, en France, avec plus de 7 ans d&apos;expérience dans le
-                développement de sites web. Doté d&apos;un large éventail de
-                compétences techniques, je vous aide à concevoir un site web
-                professionnel qui propulse votre présence dans le monde
-                numérique. N&apos;hésitez pas à me contacter pour discuter de
-                votre projet et transformer vos idées en réalité digitale.
-              </p>
+              <div className="font-medium xs:px-5">
+               <h2 className="text-2xl font-bold mb-4">
+    Développeur Web Full-Stack à Paris | 5+ ans d&apos;expérience
+  </h2>
+
+  <p className="mb-4">
+    Je suis un développeur web full-stack passionné. Fort de plus de 5 ans d&apos;expérience, je suis spécialisé dans la création de sites web sur mesure.
+  </p>
+
+  <ul className="list-disc list-inside mb-4 space-y-2">
+    <li>
+      <strong>Front-end :</strong> Je conçois des interfaces utilisateur intuitives et responsives qui garantissent une expérience utilisateur (UX) exceptionnelle.
+    </li>
+    <li>
+      <strong>Back-end :</strong> Je construis des architectures serveur robustes, des API sécurisées et des bases de données performantes pour assurer la solidité de votre projet.
+    </li>
+  </ul>
+
+  <p>
+    Contactez-moi pour discuter de votre projet et donner vie à votre solution digitale.
+  </p>
+              </div>
             </div>
-            <div className="md:max-w-[50vw] md:mx-auto xs:min-w-[80vw] xs:mx-[10%] xs:col-span-5 sm:col-span-8 md:col-span-8 col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
-              <Image
-                priority
-                src={avatar}
-                alt="Hocine Dev"
-                className="w-full h-auto rounded-2xl"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              ></Image>
-            </div>
+           
 
             <div className=" md:col-span-8  xs:min-w-[100vw] col-span-2 sm:col-span-8 sm:items-center md:items-center flex flex-col items-end xs:!items-center justify-between xs:col-span-5  xl:col-span-8 xl:flex-row">
               <div className="flex flex-col items-end xs:!items-center sm:items-center md:items-center justify-center">
