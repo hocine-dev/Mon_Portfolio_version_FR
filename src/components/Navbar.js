@@ -188,7 +188,7 @@ const Navbar = () => {
      {IsOpen?
      
      <div className="  min-w-[100vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2
-      -translate-y-full  z-30 bg-light/80 rounded-lg backdrop-blur-md py-32 mt-12">
+      -translate-y-[80%]  z-30 bg-light/80 rounded-lg backdrop-blur-md py-32 mt-12">
         <nav className="flex items-center justify-center flex-col">
           <CustomMobileLink
             href={"/"}
