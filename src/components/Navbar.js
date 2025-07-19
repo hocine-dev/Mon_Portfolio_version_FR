@@ -119,6 +119,16 @@ const Navbar = () => {
           >
             À propos de Moi
           </Link>
+           <Link
+            href={"/projects"}
+            className={
+              router.asPath === "/projects"
+                ? ` m-4 ${navbar.border_show}`
+                : ` m-4 ${navbar.border}`
+            }
+          >
+            Mes Services
+          </Link>
           <Link
             href={"/projects"}
             className={
@@ -141,15 +151,16 @@ const Navbar = () => {
           </Link>
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
-            href="https://github.com/hocine-dev"
+           <motion.a
+            href="https://web.whatsapp.com/send?phone=16145059642"
             target="_blank"
             whileHover={{ y: -2 }}
-            className="w-6 m-5"
+            className="w-6 m-3"
             whileTap={{ scale: 0.9 }}
           >
-            <Image src={githubIcon} alt="github" style={{ scale: "2.5" }} />
+            <Image src={whatsappIcon} alt="whatsapp" style={{ scale: "2.5" }} />
           </motion.a>
+         
           <motion.a
             href="https://www.linkedin.com/in/hocinedev/"
             target="_blank"
@@ -159,24 +170,16 @@ const Navbar = () => {
           >
             <Image src={linkedinIcon} alt="linkedin" style={{ scale: "2.5" }} />
           </motion.a>
-          <motion.a
-            href="https://bit.ly/46G9YNw"
+           <motion.a
+            href="https://github.com/hocine-dev"
             target="_blank"
             whileHover={{ y: -2 }}
             className="w-6 m-5"
             whileTap={{ scale: 0.9 }}
           >
-            <Image src={fiverrIcon} alt="fiverr" style={{ scale: "2.5" }} />
+            <Image src={githubIcon} alt="github" style={{ scale: "2.5" }} />
           </motion.a>
-          <motion.a
-            href="https://web.whatsapp.com/send?phone=16145059642"
-            target="_blank"
-            whileHover={{ y: -2 }}
-            className="w-6 m-3"
-            whileTap={{ scale: 0.9 }}
-          >
-            <Image src={whatsappIcon} alt="whatsapp" style={{ scale: "2.5" }} />
-          </motion.a>
+         
         </nav>
       </div>
 
@@ -185,7 +188,7 @@ const Navbar = () => {
      {IsOpen?
      
      <div className="  min-w-[100vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2
-      -translate-y-1/2 z-30 bg-light/80 rounded-lg backdrop-blur-md py-32 mt-12">
+      -translate-y-full  z-30 bg-light/80 rounded-lg backdrop-blur-md py-32 mt-12">
         <nav className="flex items-center justify-center flex-col">
           <CustomMobileLink
             href={"/"}
@@ -209,7 +212,16 @@ const Navbar = () => {
             title={"A Propos de Moi"}
             toggle={handelClick}
           />
-            
+            <CustomMobileLink
+            href={"/projects"}
+            className={
+              router.asPath === "/projects"
+                ? ` my-2 ${navbar.border_show}`
+                : ` my-2 ${navbar.border}`
+            }
+            title={"Mes Services"}
+            toggle={handelClick}
+            /> 
           
           <CustomMobileLink
             href={"/projects"}
@@ -233,15 +245,16 @@ const Navbar = () => {
             />
         </nav>
         <nav className="flex items-center justify-center flex-wrap mt-5">
-          <motion.a
-            href="https://github.com/hocine-dev"
+           <motion.a
+            href="https://wa.me/16145059642"
             target="_blank"
             whileHover={{ y: -2 }}
-            className="w-6 m-5"
+            className="w-6 m-3"
             whileTap={{ scale: 0.9 }}
           >
-            <Image src={githubIcon} alt="github" style={{ scale: "2.5" }} />
+            <Image src={whatsappIcon} alt="whatsapp" style={{ scale: "2.5" }} />
           </motion.a>
+         
           <motion.a
             href="https://www.linkedin.com/in/hocinedev/"
             target="_blank"
@@ -251,30 +264,21 @@ const Navbar = () => {
           >
             <Image src={linkedinIcon} alt="linkedin" style={{ scale: "2.5" }} />
           </motion.a>
-          <motion.a
-            href="https://bit.ly/46G9YNw"
+           <motion.a
+            href="https://github.com/hocine-dev"
             target="_blank"
             whileHover={{ y: -2 }}
             className="w-6 m-5"
             whileTap={{ scale: 0.9 }}
           >
-            <Image src={fiverrIcon} alt="fiverr" style={{ scale: "2.5" }} />
+            <Image src={githubIcon} alt="github" style={{ scale: "2.5" }} />
           </motion.a>
-          <motion.a
-            href="https://wa.me/16145059642"
-            target="_blank"
-            whileHover={{ y: -2 }}
-            className="w-6 m-3"
-            whileTap={{ scale: 0.9 }}
-          >
-            <Image src={whatsappIcon} alt="whatsapp" style={{ scale: "2.5" }} />
-          </motion.a>
+        
+         
         </nav>
       </div>:null}
 
-      <div className="absolute left-[50%] top-2 translate-x-[50%] z-50  lg:hidden">
-        <Logo />
-      </div>
+      
     </header>
   );
 };
