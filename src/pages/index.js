@@ -157,7 +157,7 @@ export default function Home() {
                   href="/CV%20Hocine%20HAMAMA.pdf"
                   target="blank"
                   download={true}
-                  className="group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white dark:from-white dark:to-gray-100 dark:text-gray-900 dark:hover:from-gray-100 dark:hover:to-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
+                  className="!w-[80vw] md:w-auto group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white dark:from-white dark:to-gray-100 dark:text-gray-900 dark:hover:from-gray-100 dark:hover:to-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
                 >
                   <span className="relative z-10 flex items-center">
                     Télécharger Mon CV
@@ -179,7 +179,7 @@ export default function Home() {
                       : "https://web.whatsapp.com/send?phone=33651859944"
                   }
                   target="blank"
-                  className="group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
+                  className="!w-[80vw] md:w-auto group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
                 >
                   <span className="relative z-10 flex items-center">
                     Contactez Moi
@@ -199,32 +199,34 @@ export default function Home() {
         </Layout>
 
         {/* Badge de qualité redesigné */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0, rotate: -180 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ delay: 1.5, duration: 0.8, type: "spring" }}
-          className={`fixed left-4 bottom-4 flex items-center justify-center overflow-hidden ${HomeStyle.spin} z-20`}
-        >
-          <div className="w-48 h-auto flex items-center justify-center relative">
-            <Image
-              src={circularImg}
-              alt="circular Img"
-              className="opacity-0"
-            />
+        {!IsMobile && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0, rotate: -180 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ delay: 1.5, duration: 0.8, type: "spring" }}
+            className={`fixed left-4 bottom-4 flex items-center justify-center overflow-hidden ${HomeStyle.spin} z-20`}
+          >
+            <div className="w-48 h-auto flex items-center justify-center relative">
+              <Image
+                src={circularImg}
+                alt="circular Img"
+                className="opacity-0"
+              />
 
-            <div className="group flex flex-col items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-gray-900 to-gray-800 dark:from-white dark:to-gray-100 text-white dark:text-gray-900 shadow-2xl border-2 border-gray-200/20 dark:border-gray-700/20 w-28 h-28 rounded-full font-semibold transition-all duration-500 hover:scale-110 hover:shadow-xl backdrop-blur-sm">
-              <div className="flex text-yellow-400 text-sm mb-1 transform group-hover:scale-110 transition-transform duration-300">
-                {"★★★★★"}
+              <div className="group flex flex-col items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-gray-900 to-gray-800 dark:from-white dark:to-gray-100 text-white dark:text-gray-900 shadow-2xl border-2 border-gray-200/20 dark:border-gray-700/20 w-28 h-28 rounded-full font-semibold transition-all duration-500 hover:scale-110 hover:shadow-xl backdrop-blur-sm">
+                <div className="flex text-yellow-400 text-sm mb-1 transform group-hover:scale-110 transition-transform duration-300">
+                  {"★★★★★"}
+                </div>
+                <span className="text-xs text-center leading-tight">
+                  Qualité
+                  <br />
+                  garantie
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <span className="text-xs text-center leading-tight">
-                Qualité
-                <br />
-                garantie
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        )}
 
        
       </main>

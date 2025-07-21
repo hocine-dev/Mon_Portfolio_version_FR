@@ -163,7 +163,7 @@ const Navbar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
            <motion.a
-            href="https://web.whatsapp.com/send?phone=16145059642"
+            href="https://web.whatsapp.com/send?phone=33651859944"
             target="_blank"
             whileHover={{ y: -2 }}
             className="w-6 m-3"
@@ -259,7 +259,7 @@ const Navbar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrap mt-5">
            <motion.a
-            href="https://wa.me/16145059642"
+            href="https://wa.me/33651859944"
             target="_blank"
             whileHover={{ y: -2 }}
             className="w-6 m-3"
