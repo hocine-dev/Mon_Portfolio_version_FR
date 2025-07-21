@@ -31,16 +31,16 @@ export default function Home() {
     }
   }, []);
 
-   // Animations variants pour 2025
+  // Animations variants pour 2025
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.1
-      }
-    }
+        delayChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -51,9 +51,9 @@ export default function Home() {
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: [0.16, 1, 0.3, 1]
-      }
-    }
+        ease: [0.16, 1, 0.3, 1],
+      },
+    },
   };
 
   const floatingVariants = {
@@ -62,9 +62,9 @@ export default function Home() {
       transition: {
         duration: 4,
         repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   };
   return (
     <>
@@ -73,7 +73,7 @@ export default function Home() {
         <meta
           name="description"
           content="
-          Développeur Web Full-Stack freelance à Paris, expert en Next.js, React et SEO. Créez votre site web performant et optimisé pour les moteurs de recherche. Contactez-moi pour vos projets à Paris et Île-de-France."
+         Développeur Web Full-Stack freelance à Paris, expert en Next.js, React et SEO. Créez votre site web performant et optimisé pour les moteurs de recherche. Contactez-moi pour vos projets à Paris et Île-de-France."
         />
       </Head>
 
@@ -85,13 +85,13 @@ export default function Home() {
           <motion.div
             variants={floatingVariants}
             animate="animate"
-            className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full blur-xl"
+            className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-blue-600/10 to-red-600/10 rounded-full blur-xl"
           />
           <motion.div
             variants={floatingVariants}
             animate="animate"
             style={{ animationDelay: "2s" }}
-            className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-br from-purple-400/10 to-pink-400/10 rounded-full blur-xl"
+            className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-br from-blue-600/10 via-white/10 to-red-600/10 rounded-full blur-xl"
           />
         </div>
 
@@ -109,9 +109,9 @@ export default function Home() {
               className="md:!w-full xs:!w-[90vw] relative"
             >
               {/* Fond décoratif */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-[50px] blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-700" />
-              
-              <ModernImage 
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/20 to-red-600/20 rounded-[50px] blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-700" />
+
+              <ModernImage
                 src={mainImg}
                 alt="Une photo de Hocine, développeur web"
                 variant="organic"
@@ -119,8 +119,6 @@ export default function Home() {
                 animate={true}
                 containerClassName="relative z-10 transform hover:scale-[1.02] transition-transform duration-700"
               />
-
-              
             </motion.div>
 
             {/* Section Contenu avec nouveau layout */}
@@ -134,7 +132,7 @@ export default function Home() {
                   text="Bonjour, je m'appelle Hocine"
                   className="xs:!text-3xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl lg:p-1 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent"
                 />
-                <div className="absolute -bottom-2 left-0 h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full lg:mx-auto lg:left-1/2 lg:-translate-x-1/2" />
+                <div className="absolute -bottom-2 left-0 h-1 w-20 bg-gradient-to-r from-blue-600 to-red-600 rounded-full lg:mx-auto lg:left-1/2 lg:-translate-x-1/2" />
               </div>
 
               {/* Description avec nouveau style */}
@@ -142,9 +140,9 @@ export default function Home() {
                 variants={itemVariants}
                 className="relative"
               >
-                <div className="absolute -inset-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 rounded-3xl blur-sm opacity-50" />
+                <div className="absolute -inset-6 bg-gradient-to-r from-blue-100/50 to-red-100/50 dark:from-blue-950/30 dark:to-red-950/30 rounded-3xl blur-sm opacity-50" />
                 <p className="relative my-4 text-base font-medium !text-left xs:px-3 leading-relaxed bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/50 dark:border-gray-700/50 shadow-sm">
-                  Je suis un <strong className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">sites web performants avec Next.js et React js</strong>. Mon expertise inclut l&apos;<strong className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier en <strong className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Île-de-France</strong>, n&apos;hésitez pas à me contacter pour concrétiser vos projets web et attirer de nouveaux clients.
+                  Je suis un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">sites web performants avec Next.js et React js</strong>. Mon expertise inclut l&apos;<strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier en <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Île-de-France</strong>, n&apos;hésitez pas à me contacter pour concrétiser vos projets web et attirer de nouveaux clients.
                 </p>
               </motion.div>
 
@@ -169,30 +167,10 @@ export default function Home() {
                       ⬇
                     </motion.span>
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
                 </Link>
 
-                <Link
-                  href={
-                    IsMobile
-                      ? "https://wa.me/33651859944"
-                      : "https://web.whatsapp.com/send?phone=33651859944"
-                  }
-                  target="blank"
-                  className="!w-[80vw] md:w-auto group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
-                >
-                  <span className="relative z-10 flex items-center">
-                    Contactez Moi
-                    <motion.span
-                      animate={{ x: [0, 3, 0] }}
-                      transition={{ duration: 2, repeat: Infinity }}
-                      className="ml-2 text-xl"
-                    >
-                      →
-                    </motion.span>
-                  </span>
-                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
-                </Link>
+               
               </motion.div>
             </motion.div>
           </motion.div>
@@ -222,13 +200,11 @@ export default function Home() {
                   <br />
                   garantie
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-red-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </div>
           </motion.div>
         )}
-
-       
       </main>
       <BackToTop />
     </>
