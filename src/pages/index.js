@@ -94,7 +94,7 @@ export default function Home() {
           />
         </div>
 
-        <Layout className="pt-0 md:pt-16 sm:mt-8 xs:px-16 xs:py-0 relative z-10">
+        <Layout className="pt-0 md:pt-16 sm:mt-8 xs:px-16 xs:py-0 relative ">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -116,7 +116,7 @@ export default function Home() {
                 variant="organic"
                 glassmorphism={true}
                 animate={true}
-                containerClassName="relative z-10 transform hover:scale-[1.02] transition-transform duration-700"
+                containerClassName="relative  transform hover:scale-[1.02] transition-transform duration-700"
               />
             </motion.div>
 
@@ -156,7 +156,7 @@ export default function Home() {
                   download={true}
                   className="!w-[80vw] md:w-auto group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white dark:from-white dark:to-gray-100 dark:text-gray-900 dark:hover:from-gray-100 dark:hover:to-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
                 >
-                  <span className="relative z-10 flex items-center">
+                  <span className="relative  flex items-center">
                     Télécharger Mon CV
                     <motion.span
                       animate={{ y: [0, -3, 0] }}

@@ -41,7 +41,7 @@ const Footer = () => {
             : "https://web.whatsapp.com/send?phone=33651859944"
     }
     target="blank"
-    className="max-md:w-[80vw] md:w-auto group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
+    className="max-md:w-[80vw] md:w-auto mobile-padding-inline group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
 >
     <span className="relative z-10 flex items-center">
         Contactez Moi

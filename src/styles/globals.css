@@ -4,3 +4,9 @@
 body.no-scroll {
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .mobile-padding-inline {
+    padding-inline: 20% !important;
+  }
+}
