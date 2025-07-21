@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import mainImg from "../../public/images/home/mainimg.png";
 import circularImg from "../../public/images/home/circular.png";
-import LightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import HomeStyle from "../styles/Home.module.css";
