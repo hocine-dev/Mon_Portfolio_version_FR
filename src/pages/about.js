@@ -136,30 +136,30 @@ const About = () => {
                   <div className="absolute -inset-6 bg-gradient-to-br from-white/80 to-gray-50/80 dark:from-gray-900/80 dark:to-gray-800/80 backdrop-blur-xl rounded-3xl border border-gray-200/50 dark:border-gray-700/50 shadow-xl group-hover:shadow-2xl transition-all duration-700" />
                   <div className="absolute -inset-8 bg-gradient-to-r from-blue-600/10 to-red-600/10 rounded-[2rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   
-                  <div className="relative p-8 xs:p-6 space-y-6">
-                    <h2 className="text-center xs:text-center sm:text-left text-xl xs:text-lg sm:text-2xl md:text-3xl font-bold uppercase bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent tracking-wide py-2 xs:py-1 sm:py-2 mx-4 xs:mx-6 sm:mx-8 md:mx-12">
+                  <div className="relative p-8 xs:px-0 space-y-6">
+                    <h2 className="text-center xs:text-center sm:text-left text-xl xs:text-lg sm:text-2xl md:text-3xl font-bold uppercase bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent tracking-wide py-2 xs:py-1 sm:py-2 mx-4 xs:mx-[2.5vw] sm:mx-8 md:mx-12" style={{maxWidth: '95vw'}}>
                       À propos de Moi
                     </h2>
                     
                     <div className="space-y-6 font-medium text-gray-700 dark:text-gray-300 leading-relaxed">
-                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white text-center sm:text-left">
+                     <h3 className="text-xl  sm:mx-2  sm:text-2xl font-bold text-gray-900 dark:text-white text-center sm:text-left">
                         Développeur Web Full-Stack à Paris | 5+ ans d&apos;expérience
                       </h3>
 
-                         <p className="text-base sm:text-lg text-center sm:text-left">
+                         <p className="sm:mx-5 text-base sm:text-lg text-center sm:text-left">
                         Je suis un développeur web full-stack passionné. Fort de plus de 5 ans d&apos;expérience, je
                         suis spécialisé dans la création de sites web sur mesure.
                       </p>
 
                       <div className="space-y-4">
-                        <div className="group/item flex items-start space-x-4 p-4 rounded-2xl bg-gradient-to-r from-blue-50/50 to-transparent dark:from-blue-950/30 dark:to-transparent border-l-4 border-blue-500 hover:shadow-lg transition-all duration-300">
+                        <div className="group/item flex items-start space-x-4 p-4 rounded-2xl bg-gradient-to-r from-blue-50/50 to-transparent dark:from-blue-950/30 dark:to-transparent border-l-4 border-blue-500 hover:shadow-lg transition-all duration-300 w-full xs:w-[95vw] xs:mx-[2.5vw]" style={{maxWidth: '95vw'}}>
                           <div className="w-3 h-3 rounded-full bg-blue-500 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
                           <div>
                             <strong className="text-blue-600 dark:text-blue-400">Front-end :</strong> Je conçois des interfaces utilisateur intuitives et responsives qui garantissent une expérience utilisateur (UX) exceptionnelle.
                           </div>
                         </div>
                         
-                        <div className="group/item flex items-start space-x-4 p-4 rounded-2xl bg-gradient-to-r from-red-50/50 to-transparent dark:from-red-950/30 dark:to-transparent border-l-4 border-red-500 hover:shadow-lg transition-all duration-300">
+                        <div className="group/item flex items-start space-x-4 p-4 rounded-2xl bg-gradient-to-r from-red-50/50 to-transparent dark:from-red-950/30 dark:to-transparent border-l-4 border-red-500 hover:shadow-lg transition-all duration-300 w-full xs:w-[95vw] xs:mx-[2.5vw]" style={{maxWidth: '95vw'}}>
                           <div className="w-3 h-3 rounded-full bg-red-500 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
                           <div>
                             <strong className="text-red-600 dark:text-red-400">Back-end :</strong> Je construis des architectures serveur robustes, des API sécurisées et des bases de données performantes pour assurer la solidité de votre projet.
@@ -167,9 +167,7 @@ const About = () => {
                         </div>
                       </div>
 
-                      <p className="text-lg xs:text-base font-semibold text-center p-6 rounded-2xl bg-gradient-to-r from-blue-100/80 to-red-100/80 dark:from-blue-950/50 dark:to-red-950/50 border border-gray-200/50 dark:border-gray-700/50">
-                        Contactez-moi pour discuter de votre projet et donner vie à votre solution digitale.
-                      </p>
+                    
                     </div>
                   </div>
                 </div>

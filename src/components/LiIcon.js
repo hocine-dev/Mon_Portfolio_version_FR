@@ -4,7 +4,7 @@ import { motion} from "framer-motion";
 const LiIcon = () => {
 
 
-  return (<figure className="absolute -left-[5.3rem] stroke-dark">
+  return (<figure className="absolute -left-[5.3rem] stroke-dark sm:hidden">
       <svg width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="75"
