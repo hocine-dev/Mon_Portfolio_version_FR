@@ -137,17 +137,18 @@ const About = () => {
                   <div className="absolute -inset-8 bg-gradient-to-r from-blue-600/10 to-red-600/10 rounded-[2rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   
                   <div className="relative p-8 xs:p-6 space-y-6">
-                    <h2 className="text-center lg:text-left text-2xl xs:text-xl font-bold uppercase bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent tracking-wide">
+                    <h2 className="text-center xs:text-center sm:text-left text-xl xs:text-lg sm:text-2xl md:text-3xl font-bold uppercase bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent tracking-wide py-2 xs:py-1 sm:py-2 mx-4 xs:mx-6 sm:mx-8 md:mx-12">
                       À propos de Moi
                     </h2>
                     
                     <div className="space-y-6 font-medium text-gray-700 dark:text-gray-300 leading-relaxed">
-                      <h3 className="text-2xl xs:text-xl font-bold text-gray-900 dark:text-white">
+                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white text-center sm:text-left">
                         Développeur Web Full-Stack à Paris | 5+ ans d&apos;expérience
                       </h3>
 
-                      <p className="text-lg xs:text-base">
-                        Je suis un développeur web full-stack passionné. Fort de plus de 5 ans d&apos;expérience, je suis spécialisé dans la création de sites web sur mesure.
+                         <p className="text-base sm:text-lg text-center sm:text-left">
+                        Je suis un développeur web full-stack passionné. Fort de plus de 5 ans d&apos;expérience, je
+                        suis spécialisé dans la création de sites web sur mesure.
                       </p>
 
                       <div className="space-y-4">
