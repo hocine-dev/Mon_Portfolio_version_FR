@@ -186,7 +186,7 @@ const SkillsGrid = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-extrabold mb-4">
+          <h2 className="text-4xl font-extrabold mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 dark:from-blue-400 dark:to-red-400">
               Compétences
             </span>

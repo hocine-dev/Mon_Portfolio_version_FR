@@ -142,7 +142,7 @@ const About = () => {
                     </h2>
                     
                     <div className="space-y-6 font-medium text-gray-700 dark:text-gray-300 leading-relaxed">
-                     <h3 className="text-xl  sm:mx-2  sm:text-2xl font-bold text-gray-900 dark:text-white text-center sm:text-left">
+                     <h3 className="text-xl  sm:ms-2 sm:me-8  sm:text-2xl font-bold text-gray-900 dark:text-white text-center sm:text-left">
                         Développeur Web Full-Stack à Paris | 5+ ans d&apos;expérience
                       </h3>
 
