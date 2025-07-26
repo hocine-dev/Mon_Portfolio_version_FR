@@ -84,14 +84,13 @@ const ServiceCard = ({ icon, title, description, items, index }) => {
    return (
 	   <motion.div
 		   variants={cardVariants}
-		   className="relative group w-[80vw] max-w-none h-full p-0 m-0"
-		   style={{ left: '50%', right: '50%', marginLeft: '-40vw', marginRight: '-50vw' }}
+		   className="relative group h-full p-0 m-0 w-[110%] max-w-[110%] -left-[5%] xl:w-full xl:max-w-full xl:left-0"
 	   >
 		   {/* Fond glassmorphism */}
-		   <div className=" sm:mb-4  absolute -inset-4 bg-gradient-to-br from-white/70 to-gray-50/70 dark:from-gray-900/70 dark:to-gray-800/70 backdrop-blur-xl rounded-3xl border border-gray-200/40 dark:border-gray-700/40 shadow-lg group-hover:shadow-2xl transition-all duration-500" />
-		   <div className="absolute -inset-6 bg-gradient-to-r from-blue-600/10 to-red-600/10 rounded-[2rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+		   <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-br from-white/70 to-gray-50/70 dark:from-gray-900/70 dark:to-gray-800/70 backdrop-blur-xl rounded-3xl border border-gray-200/40 dark:border-gray-700/40 shadow-lg group-hover:shadow-2xl transition-all duration-500" />
+		   <div className="absolute -inset-3 sm:-inset-6 bg-gradient-to-r from-blue-600/10 to-red-600/10 rounded-[2rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-		   <div className="relative flex flex-col p-8 h-full space-y-6">
+		   <div className="relative flex flex-col p-6 sm:p-8 h-full space-y-4 sm:space-y-6">
 			   <div className="flex items-center space-x-4">
 				   <motion.div
 					   whileHover={{ scale: 1.1, rotate: 10 }}
@@ -99,20 +98,20 @@ const ServiceCard = ({ icon, title, description, items, index }) => {
 				   >
 					   {icon}
 				   </motion.div>
-				   <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+				   <h3 className="text-xl sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
 					   {title}
 				   </h3>
 			   </div>
 
-			   <p className="text-gray-700 dark:text-gray-300 leading-relaxed flex-grow">
+			   <p className="text-gray-700 dark:text-gray-300 leading-relaxed flex-grow text-sm sm:text-base">
 				   {description}
 			   </p>
 
-			   <ul className="space-y-3">
+			   <ul className="space-y-2 sm:space-y-3">
 				   {items.map((item, i) => (
-					   <li key={i} className="flex items-center space-x-3">
-						   <span className="text-blue-500">✔</span>
-						   <span className="text-gray-800 dark:text-gray-200">
+					   <li key={i} className="flex items-start space-x-3">
+						   <span className="text-blue-500 mt-1">✔</span>
+						   <span className="text-gray-800 dark:text-gray-200 text-sm sm:text-base">
 							   {item}
 						   </span>
 					   </li>
@@ -145,14 +144,14 @@ const Services = () => {
 				/>
 			</Head>
 			<TransitionEffect />
-			<main className=" relative w-full flex flex-col items-center justify-center overflow-hidden">
-			   <Layout className="pt-16 sm:pt-8 px-0 mx-0">
+			<main className="relative w-full flex flex-col items-center justify-center overflow-hidden">
+			   <Layout className="pt-16 sm:pt-8">
 					{/* Titre */}
 					<motion.div
 						initial={{ y: -50, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ duration: 0.5 }}
-						className="text-center relative mb-20 xs:mb-12"
+						className="text-center relative mb-20 xs:mb-12 px-4"
 					>
 						<div className="absolute -inset-4 bg-gradient-to-r from-blue-600/20 to-red-600/20 rounded-[50px] blur-3xl opacity-30" />
 						<AnimatedText
@@ -172,7 +171,8 @@ const Services = () => {
 						variants={containerVariants}
 						initial="hidden"
 						animate="visible"
-					   className="grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-12 2xl:gap-16 mx-0 px-0"
+				   className="grid grid-cols-1 xl:grid-cols-2 gap-y-10 xl:gap-x-10 px-0 sm:px-8 lg:px-16 w-full max-w-7xl mx-auto"
+				   style={{paddingLeft: 0, paddingRight: 0}}
 					>
 						{servicesData.map((service, index) => (
 							<ServiceCard key={index} {...service} index={index} />
