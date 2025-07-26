@@ -131,9 +131,9 @@ const Navbar = () => {
             À propos de Moi
           </Link>
            <Link
-            href={"/projects"}
+            href={"/services"}
             className={
-              router.asPath === "/projects"
+              router.asPath === "/services"
                 ? ` m-4 ${navbar.border_show}`
                 : ` m-4 ${navbar.border}`
             }
@@ -226,9 +226,9 @@ const Navbar = () => {
             toggle={handelClick}
           />
             <CustomMobileLink
-            href={"/projects"}
+            href={"/services"}
             className={
-              router.asPath === "/projects"
+              router.asPath === "/services"
                 ? ` my-2 ${navbar.border_show}`
                 : ` my-2 ${navbar.border}`
             }
