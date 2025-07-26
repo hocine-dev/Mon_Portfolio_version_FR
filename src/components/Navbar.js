@@ -114,28 +114,28 @@ const Navbar = () => {
             href={"/"}
             className={
               router.asPath === "/"
-                ? ` mr-4 ${navbar.border_show}`
-                : ` mr-4 ${navbar.border}`
+                ? `mr-4 ${navbar.border_show} bg-gray-100 text-dark rounded-xl px-4 py-2 shadow-lg transition-all duration-300`
+                : `mr-4 ${navbar.border} hover:bg-gray-100 hover:text-dark hover:shadow-xl hover:scale-105 transform transition-all duration-200 rounded hover:underline underline-offset-4 px-4 py-2`
             }
           >
-          Accueil
+            Accueil
           </Link>
           <Link
             href={"/about"}
             className={
               router.asPath === "/about"
-                ? ` m-4 ${navbar.border_show}`
-                : ` m-4 ${navbar.border}`
+                ? `m-4 ${navbar.border_show} bg-gray-100 text-dark rounded-xl px-4 py-2 shadow-lg transition-all duration-300`
+                : `m-4 ${navbar.border} hover:bg-gray-100 hover:text-dark hover:shadow-xl hover:scale-105 transform transition-all duration-200 rounded hover:underline underline-offset-4 px-4 py-2`
             }
           >
             À propos de Moi
           </Link>
-           <Link
+          <Link
             href={"/services"}
             className={
               router.asPath === "/services"
-                ? ` m-4 ${navbar.border_show}`
-                : ` m-4 ${navbar.border}`
+                ? `m-4 ${navbar.border_show} bg-gray-100 text-dark rounded-xl px-4 py-2 shadow-lg transition-all duration-300`
+                : `m-4 ${navbar.border} hover:bg-gray-100 hover:text-dark hover:shadow-xl hover:scale-105 transform transition-all duration-200 rounded hover:underline underline-offset-4 px-4 py-2`
             }
           >
             Mes Services
@@ -144,8 +144,8 @@ const Navbar = () => {
             href={"/projects"}
             className={
               router.asPath === "/projects"
-                ? ` m-4 ${navbar.border_show}`
-                : ` m-4 ${navbar.border}`
+                ? `m-4 ${navbar.border_show} bg-gray-100 text-dark rounded-xl px-4 py-2 shadow-lg transition-all duration-300`
+                : `m-4 ${navbar.border} hover:bg-gray-100 hover:text-dark hover:shadow-xl hover:scale-105 transform transition-all duration-200 rounded hover:underline underline-offset-4 px-4 py-2`
             }
           >
             Mes Projets
@@ -154,11 +154,21 @@ const Navbar = () => {
             href={"/blog"}
             className={
               router.asPath === "/blog"
-                ? ` ml-4 ${navbar.border_show}`
-                : ` ml-4 ${navbar.border}`
+                ? `ml-4 ${navbar.border_show} bg-gray-100 text-dark rounded-xl px-4 py-2 shadow-lg transition-all duration-300`
+                : `ml-4 ${navbar.border} hover:bg-gray-100 hover:text-dark hover:shadow-xl hover:scale-105 transform transition-all duration-200 rounded hover:underline underline-offset-4 px-4 py-2`
             }
           >
             Mon Blog
+          </Link>
+          <Link
+            href={"/contact"}
+            className={
+              router.asPath === "/contact"
+                ? `ml-4 ${navbar.border_show} bg-gray-100 text-dark rounded-xl px-4 py-2 shadow-lg transition-all duration-300`
+                : `ml-4 ${navbar.border} hover:bg-gray-100 hover:text-dark hover:shadow-xl hover:scale-105 transform transition-all duration-200 rounded hover:underline underline-offset-4 px-4 py-2`
+            }
+          >
+            Contact
           </Link>
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
