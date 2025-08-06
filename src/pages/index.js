@@ -141,7 +141,7 @@ export default function Home() {
               >
                 <div className="absolute -inset-6 bg-gradient-to-r from-blue-100/50 to-red-100/50 dark:from-blue-950/30 dark:to-red-950/30 rounded-3xl blur-sm opacity-50" />
                 <p className="relative my-4 text-base font-medium !text-left xs:px-3 leading-relaxed bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/50 dark:border-gray-700/50 shadow-sm">
-                  Je suis un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">sites web performants avec Next.js et React js</strong>. Mon expertise inclut l&apos;<strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier en <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Île-de-France</strong>, n&apos;hésitez pas à me contacter pour concrétiser vos projets web et attirer de nouveaux clients.
+                  Je suis un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">sites web performants avec Next.js et React js</strong>. Mon expertise inclut l&apos;<strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier, Contactez-moi dès maintenant pour concrétiser vos projets web et attirer de nouveaux clients.
                 </p>
               </motion.div>
 
@@ -151,19 +151,17 @@ export default function Home() {
                 className="flex items-center mt-2 w-full justify-evenly lg:self-center xs:mt-5 gap-4 lg:flex-col"
               >
                 <Link
-                  href="/CV%20Hocine%20HAMAMA.pdf"
-                  target="blank"
-                  download={true}
-                  className="!w-[80vw] md:w-auto group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white dark:from-white dark:to-gray-100 dark:text-gray-900 dark:hover:from-gray-100 dark:hover:to-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
+                  href="/projects"
+                  className="!w-[80vw] md:w-auto group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
                 >
-                  <span className="relative  flex items-center">
-                    Télécharger Mon CV
+                  <span className="relative flex items-center">
+                    Voir mes réalisations
                     <motion.span
-                      animate={{ y: [0, -3, 0] }}
+                      animate={{ x: [0, 6, 0] }}
                       transition={{ duration: 2, repeat: Infinity }}
                       className="ml-2 text-2xl"
                     >
-                      ⬇
+                      →
                     </motion.span>
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />

@@ -180,7 +180,26 @@ const About = () => {
             <motion.div variants={itemVariants}>
               <Skills />
             </motion.div>
-            
+
+            {/* Bouton Télécharger Mon CV */}
+            <motion.div
+              variants={itemVariants}
+              className="flex items-center justify-center my-8"
+            >
+              <a
+                href="/CV%20Hocine%20HAMAMA.pdf"
+                target="_blank"
+                download
+                className="group relative flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white dark:from-white dark:to-gray-100 dark:text-gray-900 dark:hover:from-gray-100 dark:hover:to-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
+              >
+                <span className="relative flex items-center">
+                  Télécharger Mon CV
+                  <span className="ml-2 text-2xl animate-bounce">⬇</span>
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+              </a>
+            </motion.div>
+
             <motion.div variants={itemVariants}>
               <Experience />
             </motion.div>
