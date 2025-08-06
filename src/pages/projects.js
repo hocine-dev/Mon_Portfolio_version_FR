@@ -132,14 +132,7 @@ const projects = () => {
           {/* Projects data array */}
           {(() => {
            const projectsData = [
-              {
-                title: "Smarteam Digital Consulting - Partenaire web",
-                summary: "Un site web professionnel et engageant pour une agence de conseil digital spécialisée en développement web. Le site présente leur expertise, leurs réalisations et leur approche personnalisée, invitant les visiteurs à les contacter pour leurs projets numériques.",
-                link: "https://smarteam.netlify.app/",
-                img: p1,
-                type: "Consulting",
-                tech: "Html, Css, Javascript, TailwindCss"
-              },
+              
               {
                 title: "Cocon Précieux - Baume multi-usage naturel",
                 summary: "Un site web apaisant et esthétique pour un baume multi-usage naturel, végan et bio. Le site détaille les bienfaits du produit, l'histoire de la marque et ses valeurs, offrant une expérience utilisateur douce et informative.",
@@ -147,6 +140,14 @@ const projects = () => {
                 img: p2,
                 type: "e-commerce",
                 tech: "Html, Css, Javascript, ReactJs, NextJS"
+              },
+               {
+                title: "ParisAppart - Vente de nom de domaine immobilier",
+                summary: "Un site web concis et direct pour la vente du nom de domaine premium \"ParisAppart.com\". Il met en évidence les avantages stratégiques du domaine pour le marché immobilier parisien, avec un processus d'enchères clair et sécurisé.",
+                link: "https://parisappart.vercel.app/",
+                img: p4,
+                type: "immobilier",
+                tech: "Html, Css, Javascript, ReactJs, NextJs"
               },
               {
                 title: "Grengou - Experts en additifs alimentaires",
@@ -157,13 +158,15 @@ const projects = () => {
                 tech: "Html, Css, Javascript, ReactJs, NextJS"
               },
               {
-                title: "ParisAppart - Vente de nom de domaine immobilier",
-                summary: "Un site web concis et direct pour la vente du nom de domaine premium \"ParisAppart.com\". Il met en évidence les avantages stratégiques du domaine pour le marché immobilier parisien, avec un processus d'enchères clair et sécurisé.",
-                link: "https://parisappart.vercel.app/",
-                img: p4,
-                type: "immobilier",
-                tech: "Html, Css, Javascript, ReactJs, NextJs"
+                title: "Smarteam Digital Consulting - Partenaire web",
+                summary: "Un site web professionnel et engageant pour une agence de conseil digital spécialisée en développement web. Le site présente leur expertise, leurs réalisations et leur approche personnalisée, invitant les visiteurs à les contacter pour leurs projets numériques.",
+                link: "https://smarteam.netlify.app/",
+                img: p1,
+                type: "Consulting",
+                tech: "Html, Css, Javascript, TailwindCss"
               }
+             
+              
             ];
 
             return (
