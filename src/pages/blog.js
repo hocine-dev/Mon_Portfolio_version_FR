@@ -127,7 +127,7 @@ const blog = () => {
               },
               {
                 img: img3,
-                title: "L'importance du Cloud Hosting pour les entreprises",
+                title: "L&apos;importance du Cloud Hosting pour les entreprises",
                 time: "4 minutes",
                 link: "https://www.linkedin.com/pulse/limportance-du-cloud-hosting-pour-les-entreprises-hocine-hamama-lbq2f",
                 summary: "Découvrez pourquoi le cloud hosting est devenu essentiel pour la performance, la sécurité et la flexibilité des entreprises modernes."
