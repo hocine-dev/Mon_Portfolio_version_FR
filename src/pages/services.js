@@ -140,7 +140,7 @@ const Services = () => {
 				<title>Services | Développeur Web Full Stack à Paris</title>
 				<meta
 					name="description"
-					content="Développeur web freelance à Paris, je propose des services de création de site sur mesure, développement Full Stack (Next.js, React), et optimisation SEO pour les entreprises en Île-de-France."
+					content="Développeur web freelance, je propose des services de création de site sur mesure, développement Full Stack (Next.js, React), et optimisation SEO pour les entreprises en Île-de-France."
 				/>
 			</Head>
 			<TransitionEffect />
@@ -159,7 +159,7 @@ const Services = () => {
 							className="relative !text-6xl lg:!text-5xl md:!text-4xl xs:!text-3xl bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent"
 						/>
 						<p className="text-lg md:text-base text-gray-600 dark:text-gray-400 mt-4 max-w-3xl mx-auto">
-							En tant que développeur web freelance à Paris, je vous aide à
+							En tant que développeur web freelance, je vous aide à
 							concrétiser vos projets digitaux avec des solutions modernes,
 							performantes et optimisées pour le SEO.
 						</p>

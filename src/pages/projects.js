@@ -9,9 +9,6 @@ import p1 from "../../public/images/projects/p1.png";
 import p2 from "../../public/images/projects/p2.png";
 import p3 from "../../public/images/projects/p3.png";
 import p4 from "../../public/images/projects/p4.png";
-import p5 from "../../public/images/projects/p5.png";
-import p6 from "../../public/images/projects/p6.png";
-import p7 from "../../public/images/projects/p7.png";
 import TransitionEffect from "@/components/TransitionEffect";
 import BackToTop from "@/components/BackToTop";
 
@@ -19,49 +16,47 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
   return (
-    <article className="sm:flex-col md:flex-col sm:last:pb-3 sm:p-1 xs:flex-col xs:last:pb-3 xs:p-1 relative p-12 w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark" />
+    <article className="sm:flex-col md:flex-col sm:last:pb-3 sm:p-1 xs:flex-col xs:last:pb-3 xs:p-1 relative p-6 md:p-10 w-full flex items-center justify-between rounded-3xl border border-solid bg-white/70 backdrop-blur-lg  transition-all duration-300 hover:scale-[1.025] hover:shadow-blue-200/40 hover:border-primary">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[1.5rem] bg-gradient-to-br from-primary/30 via-white/60 to-dark/10" />
       <Link
         href={link}
         target="blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg xs:w-[90%] sm:w-[90%] md:w-[90%]"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-2xl shadow-lg xs:w-full sm:w-full md:w-[90%] border border-primary/20 bg-white/60 backdrop-blur-md transition-transform duration-300"
       >
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto"
-          whileHover={{ scale: 1.05 }}
+          className="w-full h-auto hover:scale-105 transition-transform duration-300"
+          whileHover={{ scale: 1.07 }}
           transition={{ duration: 0.2 }}
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 xs:w-full sm:w-full md:w-full">
-        <span className="text-primary font-medium text-xl sm:w-full sm:flex sm:justify-center xs:w-full xs:flex xs:justify-center md:w-full md:flex md:justify-center p-2">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 xs:w-full sm:w-full md:w-full mt-4 md:mt-0">
+        <span className="text-primary font-semibold text-lg uppercase tracking-widest sm:w-full sm:flex sm:justify-center xs:w-full xs:flex xs:justify-center md:w-full md:flex md:justify-center p-2">
           <span>{type}</span>
         </span>
         <Link href={link} target="blank">
           <h2
-            className="
-          
-          w-full my-2 text-left text-4xl font-bold hover:underline underline-offset-2"
+            className="w-full my-2 text-left text-3xl md:text-4xl font-extrabold hover:underline underline-offset-4 text-dark drop-shadow-sm"
           >
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
-        <span className="font-bold xs:flex xs:flex-col sm:flex sm:flex-col">
-          <span>compétences:</span>&nbsp;
-          <span className="text-primary font-bold break-all">{tech}</span>
+        <p className="my-2 font-medium text-dark/80 text-base md:text-lg leading-relaxed">{summary}</p>
+        <span className="font-bold xs:flex xs:flex-col sm:flex sm:flex-col mt-2">
+          <span className="text-xs text-dark/60 uppercase tracking-widest">Compétences</span>
+          <span className="text-primary font-bold break-all text-base">{tech}</span>
         </span>
         <br></br>
-        <span className="xs:flex xs:justify-center sm:flex sm:justify-center md:flex md:justify-center w-full">
+        <span className="xs:flex xs:justify-center sm:flex sm:justify-center md:flex md:justify-center w-full mt-4">
           <Link
             href={link}
             target="blank"
-            className="ml-4 bg-dark rounded text-light p-2 px-6 text-lg font-semibold"
+            className="bg-primary/90 hover:bg-primary text-light rounded-full py-2 px-6 text-base font-semibold shadow-md transition-colors duration-200"
           >
-          Lien vers le projet
+            Voir le projet
           </Link>
         </span>
       </div>
@@ -134,89 +129,51 @@ const projects = () => {
             className="mb-16 xs:!text-3xl"
           />
 
-          <div className="grid grid-cols-12 gab-24 gap-y-16">
-            <div className="col-span-12 xs:min-w-[90vw] sm:min-w-[90vw] xs:-ms-[3rem] sm:-ms-[3rem] md:min-w-[90vw] md:-ms-[3rem]">
-              <FeaturedProject
-                title="Produits organic"
-                summary="Un site web de nourriture saine utilisant des technologies de pointe. Le site est conçu avec un design responsive, intégrant HTML5, CSS3 et JavaScript pour une expérience utilisateur fluide."
-                link="https://myorganic-food.netlify.app/"
-                img={p4}
-                type="Web Site"
-                tech="Html,Css,Javascript,Bootstrap"
-              />
-            </div>
-            <div className="col-span-12 xs:min-w-[90vw] xs:-ms-[3rem] md:min-w-[90vw] md:-ms-[3rem] hidden xs:flex sm:flex sm:min-w-[90vw] sm:-ms-[3rem] md:flex ">
-              <FeaturedProject
-                title="siteweb produits alimentaires"
-                summary="En utilisant de nouvelles technologies comme Next.js et TailwindCSS, j'ai créé une expérience utilisateur fluide. Grâce à un design responsive et des performances optimisées, le site s'adapte parfaitement à tous les appareils."
-                link="https://grengou.com/"
-                img={p3}
-                type="Web Site"
-                tech="nextjs,tailwindcss"
-              />
-            </div>
-            <div className="col-span-12 xs:min-w-[90vw] xs:-ms-[3rem] hidden xs:flex sm:flex sm:min-w-[90vw] sm:-ms-[3rem] md:flex md:min-w-[90vw] md:-ms-[3rem]">
-              <FeaturedProject
-                title="Portfolio Website"
-                summary="Un site web one-page très agréable qui décrit le profil d'un développeur web. Le site dispose d'un design soigné, est responsive sur tous les appareils et contient toutes les informations sur le propriétaire ainsi qu'un formulaire de contact."
-                link="https://rayancano.netlify.app/"
-                img={p2}
-                type="Web Site"
-                tech="Html,Css,Javascript,Bootstrap"
-              />
-            </div>
-            <div className="col-span-6 me-10 xs:hidden sm:hidden md:hidden ">
-              <Project
-                title="Portfolio Website"
-                summary="Un site web one-page très agréable qui décrit le profil d'un développeur web. Le site dispose d'un design soigné, est responsive sur tous les appareils et contient toutes les informations sur le propriétaire ainsi qu'un formulaire de contact."
-                link="https://rayancano.netlify.app/"
-                img={p2}
-                type="Web Site"
-                tech="Html,Css,Javascript,Bootstrap"
-              />
-            </div>
-            <div className="col-span-6 ms-10 xs:hidden sm:hidden md:hidden ">
-              <Project
-                title="siteweb produits alimentaires"
-                summary="En utilisant de nouvelles technologies comme Next.js et TailwindCSS, j'ai créé une expérience utilisateur fluide. Grâce à un design responsive et des performances optimisées, le site s'adapte parfaitement à tous les appareils."
-                link="https://grengou.com/"
-                img={p3}
-                type="Web Site"
-                tech="nextjs,tailwindcss"
-              />
-            </div>
-            <div className="col-span-12 xs:min-w-[90vw] xs:-ms-[3rem] sm:min-w-[90vw] sm:-ms-[3rem] md:min-w-[90vw] md:-ms-[3rem]">
-              <FeaturedProject
-                title="Agence web"
-                summary="Un site web one-page très agréable qui présente une entreprise de développement web. Le site dispose d'un design soigné, est responsive sur tous les appareils et contient toutes les informations essentielles sur l'entreprise."
-                link="https://dz-dev.netlify.app/"
-                img={p1}
-                type="Web Site"
-                tech="Html,Css,Javascript,Bootstrap"
-              />
-            </div>
-            <div className="col-span-6 me-10 xs:hidden sm:hidden md:hidden ">
-              <Project
-                title="Générateur de password"
-                summary="Une application monopage qui permet aux utilisateurs de générer un mot de passe personnalisé avec la longueur souhaitée et de choisir d'inclure des majuscules, minuscules, chiffres et symboles. L'application est très rapide et pratique."
-                link="https://password-generator-byhocinedev.netlify.app/"
-                img={p5}
-                type="Web App"
-                tech="Html,Css,Javascript"
-              />
-            </div>
-            <div className="col-span-6 ms-10 xs:hidden sm:hidden md:hidden ">
-              <Project
-                title="Générateur de CV"
-                summary="Ce site web est une application monopage qui permet aux utilisateurs de générer un CV attrayant en ligne en saisissant simplement les informations nécessaires. L'utilisateur a également la possibilité de télécharger le CV généré au format PDF. Le site est entièrement responsive et s'adapte à tous les appareils."
-                link="https://cvgeneratorbyhocinedev.netlify.app/"
-                img={p6}
-                type="Web App"
-                tech="Html,Css,Javascript"
-              />
-            </div>
-            
-          </div>
+          {/* Projects data array */}
+          {(() => {
+           const projectsData = [
+              {
+                title: "Smarteam Digital Consulting - Partenaire web",
+                summary: "Un site web professionnel et engageant pour une agence de conseil digital spécialisée en développement web. Le site présente leur expertise, leurs réalisations et leur approche personnalisée, invitant les visiteurs à les contacter pour leurs projets numériques.",
+                link: "https://smarteam.netlify.app/",
+                img: p1,
+                type: "Web Site",
+                tech: "Html,Css,Javascript"
+              },
+              {
+                title: "Cocon Précieux - Baume multi-usage naturel",
+                summary: "Un site web apaisant et esthétique pour un baume multi-usage naturel, végan et bio. Le site détaille les bienfaits du produit, l'histoire de la marque et ses valeurs, offrant une expérience utilisateur douce et informative.",
+                link: "https://cocon-precieux.vercel.app/",
+                img: p2,
+                type: "Web Site",
+                tech: "Html,Css,Javascript"
+              },
+              {
+                title: "Grengou - Experts en additifs alimentaires",
+                summary: "Un site web élégant et informatif présentant une entreprise spécialisée dans l'importation et la commercialisation d'additifs alimentaires. Le site met en avant leur expertise, leur gamme de produits et leurs coordonnées, avec un design clair et une navigation intuitive.",
+                link: "https://grengou.vercel.app/",
+                img: p3,
+                type: "Web Site",
+                tech: "Html,Css,Javascript"
+              },
+              {
+                title: "ParisAppart.com - Vente de nom de domaine immobilier",
+                summary: "Un site web concis et direct pour la vente du nom de domaine premium \"ParisAppart.com\". Il met en évidence les avantages stratégiques du domaine pour le marché immobilier parisien, avec un processus d'enchères clair et sécurisé.",
+                link: "https://parisappart.vercel.app/",
+                img: p4,
+                type: "Web Site",
+                tech: "Html,Css,Javascript"
+              }
+            ];
+
+            return (
+              <div className="grid grid-cols-1  gap-10 md:gap-12 w-full px-2 md:px-0">
+                {projectsData.map((project, idx) => (
+                  <FeaturedProject key={idx} {...project} />
+                ))}
+              </div>
+            );
+          })()}
         </Layout>
       </main>
       <BackToTop/>
