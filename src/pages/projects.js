@@ -123,7 +123,7 @@ const projects = () => {
       <TransitionEffect></TransitionEffect>
 
       <main className="w-full mb-16 flex flex-col items-center justify-center lg:mt-5">
-        <Layout className="pt-16">
+        <Layout className="pt-16 xs:p-6">
           <AnimatedText
             text="Quelques projets que j'ai réalisés"
             className="mb-16 xs:!text-3xl"
@@ -137,32 +137,32 @@ const projects = () => {
                 summary: "Un site web professionnel et engageant pour une agence de conseil digital spécialisée en développement web. Le site présente leur expertise, leurs réalisations et leur approche personnalisée, invitant les visiteurs à les contacter pour leurs projets numériques.",
                 link: "https://smarteam.netlify.app/",
                 img: p1,
-                type: "Web Site",
-                tech: "Html,Css,Javascript"
+                type: "Consulting",
+                tech: "Html, Css, Javascript, TailwindCss"
               },
               {
                 title: "Cocon Précieux - Baume multi-usage naturel",
                 summary: "Un site web apaisant et esthétique pour un baume multi-usage naturel, végan et bio. Le site détaille les bienfaits du produit, l'histoire de la marque et ses valeurs, offrant une expérience utilisateur douce et informative.",
                 link: "https://cocon-precieux.vercel.app/",
                 img: p2,
-                type: "Web Site",
-                tech: "Html,Css,Javascript"
+                type: "e-commerce",
+                tech: "Html, Css, Javascript, ReactJs, NextJS"
               },
               {
                 title: "Grengou - Experts en additifs alimentaires",
                 summary: "Un site web élégant et informatif présentant une entreprise spécialisée dans l'importation et la commercialisation d'additifs alimentaires. Le site met en avant leur expertise, leur gamme de produits et leurs coordonnées, avec un design clair et une navigation intuitive.",
                 link: "https://grengou.vercel.app/",
                 img: p3,
-                type: "Web Site",
-                tech: "Html,Css,Javascript"
+                type: "alimentaires",
+                tech: "Html, Css, Javascript, ReactJs, NextJS"
               },
               {
-                title: "ParisAppart.com - Vente de nom de domaine immobilier",
+                title: "ParisAppart - Vente de nom de domaine immobilier",
                 summary: "Un site web concis et direct pour la vente du nom de domaine premium \"ParisAppart.com\". Il met en évidence les avantages stratégiques du domaine pour le marché immobilier parisien, avec un processus d'enchères clair et sécurisé.",
                 link: "https://parisappart.vercel.app/",
                 img: p4,
-                type: "Web Site",
-                tech: "Html,Css,Javascript"
+                type: "immobilier",
+                tech: "Html, Css, Javascript, ReactJs, NextJs"
               }
             ];
 
