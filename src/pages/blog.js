@@ -42,7 +42,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         </Link>
         <p className="text-base md:text-lg text-dark/80 leading-relaxed mb-4">{summary}</p>
         <div className="flex xs:justify-center justify-end">
-          <Link href={link} target="blank" className="inline-block bg-primary text-white font-semibold rounded-full px-6 py-2 text-sm md:text-base shadow-md hover:bg-primary/90 transition-colors duration-200">Lire l'article</Link>
+          {/* Corrected the unescaped apostrophe here */}
+          <Link href={link} target="blank" className="inline-block bg-primary text-white font-semibold rounded-full px-6 py-2 text-sm md:text-base shadow-md hover:bg-primary/90 transition-colors duration-200">Lire l&apos;article</Link>
         </div>
       </div>
     </li>
@@ -127,7 +128,8 @@ const blog = () => {
               },
               {
                 img: img3,
-                title: "L&apos;importance du Cloud Hosting pour les entreprises",
+                // Corrected the title to be a proper string, which will render correctly
+                title: "L'importance du Cloud Hosting pour les entreprises",
                 time: "4 minutes",
                 link: "https://www.linkedin.com/pulse/limportance-du-cloud-hosting-pour-les-entreprises-hocine-hamama-lbq2f",
                 summary: "Découvrez pourquoi le cloud hosting est devenu essentiel pour la performance, la sécurité et la flexibilité des entreprises modernes."
