@@ -1,17 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { M_PLUS_1 } from "next/font/google";
+import { useRouter } from "next/router";
 
 const quote = {
   initial: { opacity: 1 },
   animate: { opacity: 1, transition: { delay: 0.5,staggerChildren:0.08, } },
 };
-const singleWord = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0, transition: { duration: 1 } },
-};
 
 const AnimatedText = ({ text, className = "" }) => {
+  const router = useRouter();
+  const isContactPage = router.asPath === "/contact";
+
+  const singleWord = {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0, transition: { duration: isContactPage ? 0.1 : 1 } },
+  };
+
   return (
     <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden  sm:py-0 ">
       <motion.h1
@@ -22,10 +26,10 @@ const AnimatedText = ({ text, className = "" }) => {
       >
         {text.split(" ").map((word, index) => {
           return (
-            <motion.span key={word + "-" + index} className="inline-block"
-            
-            variants={singleWord}
-          
+            <motion.span
+              key={word + "-" + index}
+              className="inline-block"
+              variants={singleWord}
             >
               {word}&nbsp;
             </motion.span>

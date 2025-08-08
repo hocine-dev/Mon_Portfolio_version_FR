@@ -7,8 +7,7 @@ import HomeStyle from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import Reviews from "./Reviews"; // Import the Reviews component
-
+import Reviews from "./Reviews"; 
 const Footer = () => {
   const [IsMobile, setIsMobile] = useState(false);
   const router = useRouter();

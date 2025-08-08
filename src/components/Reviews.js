@@ -31,11 +31,11 @@ const reviews = [
 const Reviews = () => {
   return (
     <section className="w-full py-16 bg-gradient-to-r from-gray-100  dark:from-gray-800 dark:to-gray-900">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 xs:flex-col xs:items-center xs:flex">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100">
           Les avis de Mes Clients
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xs:grid-cols-1 xs:w-[95vw] gap-8">
           {reviews.map((review, index) => (
             <div
               key={index}
