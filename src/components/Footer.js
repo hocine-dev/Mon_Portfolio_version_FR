@@ -7,7 +7,7 @@ import HomeStyle from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-
+import Reviews from "./Reviews"; // Import the Reviews component
 
 const Footer = () => {
   const [IsMobile, setIsMobile] = useState(false);
@@ -43,7 +43,7 @@ const Footer = () => {
                   "/contact"
                    
                 }
-                className="max-md:w-[80vw] md:w-auto mobile-padding-inline group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
+                className="max-md:w-[80vw]  md:w-auto mobile-padding-inline group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
               >
                 <span className="relative z-10 flex items-center">
                   Contactez Moi
@@ -60,6 +60,9 @@ const Footer = () => {
             </div>
           )}
         </div>
+
+        {/* Reviews Section */}
+        {router.asPath === "/" && <Reviews />}
 
         {/* Divider */}
         <div className="border-t border-gray-300 dark:border-gray-600 mt-8 pt-6">
