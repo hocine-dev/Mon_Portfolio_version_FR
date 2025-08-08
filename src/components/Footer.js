@@ -6,10 +6,13 @@ import Image from "next/image";
 import HomeStyle from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 
 const Footer = () => {
   const [IsMobile, setIsMobile] = useState(false);
+  const router = useRouter();
+  const isContactPage = router.asPath === "/contact";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -29,33 +32,33 @@ const Footer = () => {
       {/* Main Footer Content */}
       <Layout className="py-8 sm:py-12 px-4 sm:px-6">
         <div className="flex flex-col space-y-8">
-          {/* CTA Section - Mobile First */}
-          <div className="flex flex-col items-center text-center space-y-6">
-            <h4 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200 leading-relaxed px-4">
-              Prêt à démarrer votre projet ou vous souhaitez simplement un devis ?
-            </h4>
-            <Link
-    href={
-        IsMobile
-            ? "https://wa.me/33651859944"
-            : "https://web.whatsapp.com/send?phone=33651859944"
-    }
-    target="blank"
-    className="max-md:w-[80vw] md:w-auto mobile-padding-inline group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
->
-    <span className="relative z-10 flex items-center">
-        Contactez Moi
-        <motion.span
-            animate={{ x: [0, 3, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="ml-2 text-xl"
-        >
-            →
-        </motion.span>
-    </span>
-    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
-</Link>
-          </div>
+          {/* CTA Section - hidden on contact page */}
+          {!isContactPage && (
+            <div className="flex flex-col items-center text-center space-y-6">
+              <h4 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200 leading-relaxed px-4">
+                Prêt à démarrer votre projet ou vous souhaitez simplement un devis ?
+              </h4>
+              <Link
+                href={
+                  "/contact"
+                   
+                }
+                className="max-md:w-[80vw] md:w-auto mobile-padding-inline group relative xs:!text-sm xs:px-1 flex items-center justify-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 overflow-hidden bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 xs:mb-2"
+              >
+                <span className="relative z-10 flex items-center">
+                  Contactez Moi
+                  <motion.span
+                    animate={{ x: [0, 3, 0] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="ml-2 text-xl"
+                  >
+                    →
+                  </motion.span>
+                </span>
+                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+              </Link>
+            </div>
+          )}
         </div>
 
         {/* Divider */}

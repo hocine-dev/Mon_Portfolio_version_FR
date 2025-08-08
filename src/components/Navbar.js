@@ -261,9 +261,19 @@ const Navbar = () => {
             className={
               router.asPath === "/blog"
                 ? ` my-2 ${navbar.border_show}`
-                : ` my-2 ${navbar.border} mb-5`
+                : ` my-2 ${navbar.border}`
             }
             title={"Mon Blog"}
+            toggle={handelClick}
+            />
+          <CustomMobileLink
+            href={"/contact"}
+            className={
+              router.asPath === "/contact"
+                ? ` my-2 ${navbar.border_show}`
+                : ` my-2 ${navbar.border} mb-5`
+            }
+            title={"Contact"}
             toggle={handelClick}
             />
         </nav>

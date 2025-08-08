@@ -5,6 +5,12 @@ body.no-scroll {
   overflow: hidden;
 }
 
+/* Prevent horizontal scroll globally */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .mobile-padding-inline {
     padding-inline: 20% !important;
