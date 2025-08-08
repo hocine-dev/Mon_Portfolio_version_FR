@@ -40,10 +40,6 @@ const ContactCard = ({ icon, title, description, buttonText, href, isExternal = 
 
   return (
     <motion.div
-      variants={itemVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
       className="bg-light/50 dark:bg-dark/50 p-6 rounded-2xl border border-solid border-dark/10 dark:border-light/10 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-shadow duration-300"
     >
       <Image src={icon} alt={`${title} icon`} width={48} height={48} className="mb-4" />
@@ -115,51 +111,34 @@ export default function Contact() {
           >
             <p className="text-dark/75 dark:text-light/75 mb-6 text-[1.5rem]">Vous avez un projet, une idée ou une question ?<br></br>
             Choisissez simplement le moyen qui vous convient le mieux pour entrer en contact avec moi.</p>
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-            >
-              {contactOptions.map((option) => (
-                <ContactCard key={option.title} {...option} />
-              ))}
-            </motion.div>
+            {contactOptions.map((option) => (
+              <ContactCard key={option.title} {...option} />
+            ))}
           </div>
 
-          <motion.div
-            className="text-center mt-20"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={itemVariants}
-          >
+          <div className="text-center mt-20">
             <h3 className="text-2xl font-semibold mb-6 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Vous aimez les réseaux ?<br></br>Voici mes comptes:</h3>
             <div className="flex items-center justify-center gap-6">
-              <motion.a
+              <a
                 href="https://www.linkedin.com/in/hocinedev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Profil LinkedIn de Hocine HAMAMA"
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
                 className="w-6 m-5"
               >
                 <Image src={linkedinIcon} alt="LinkedIn" style={{ scale: "2.5" }} />
-              </motion.a>
-              <motion.a
+              </a>
+              <a
                 href="https://github.com/hocine-dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Profil GitHub de Hocine HAMAMA"
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
                 className="w-6 m-5"
               >
                 <Image src={githubIcon} alt="GitHub" style={{ scale: "2.5" }} />
-              </motion.a>
+              </a>
             </div>
-          </motion.div>
+          </div>
         </Layout>
       </main>
       <BackToTop />

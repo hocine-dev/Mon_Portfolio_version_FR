@@ -88,7 +88,7 @@ const About = () => {
 
       <TransitionEffect></TransitionEffect>
 
-      <main className="relative flex w-full flex-col items-center justify-center lg:mt-5 overflow-hidden">
+      <main className="relative flex w-full flex-col items-center justify-center lg:mt-5 overflow-hidden overflow-x-hidden">
         {/* Éléments décoratifs flottants */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
@@ -147,8 +147,7 @@ const About = () => {
                       </h3>
 
                          <p className="sm:mx-5 text-base sm:text-lg text-center sm:text-left">
-                        Je suis un développeur web full-stack passionné. Fort de plus de 5 ans d&apos;expérience, je
-                        suis spécialisé dans la création de sites web sur mesure.
+                        Je suis un développeur web full-stack passionné. Fort de plus de 5 ans d&apos;expérience, je suis spécialisé dans la création de sites web sur mesure.
                       </p>
 
                       <div className="space-y-4">
@@ -173,7 +172,7 @@ const About = () => {
                 </div>
               </div>
 
-             
+              
             </motion.div>
 
             {/* Sections Skills, Experience, Education */}
