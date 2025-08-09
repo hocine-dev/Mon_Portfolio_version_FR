@@ -100,6 +100,7 @@ const Navbar = () => {
             IsOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
           }`}
         ></span>
+        Menu
       </button>
       </div>
       

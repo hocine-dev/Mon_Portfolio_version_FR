@@ -34,9 +34,9 @@ const Footer = () => {
           {/* CTA Section - hidden on contact page */}
           {!isContactPage && (
             <div className="flex flex-col items-center text-center space-y-6">
-              <h4 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200 leading-relaxed px-4">
+              <h2 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200 leading-relaxed px-4">
                 Prêt à démarrer votre projet ou vous souhaitez simplement un devis ?
-              </h4>
+              </h2>
               <Link
                 href={
                   "/contact"
