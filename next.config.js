@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
-
-module.exports = nextConfig
-
-module.exports = {
+  swcMinify: true,
+  // Serve modern JS only (no transforms/polyfills for legacy browsers)
+  experimental: {
+  legacyBrowsers: false,
+  },
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
@@ -14,3 +14,5 @@ module.exports = {
     ignoreBuildErrors: false,
   },
 }
+
+module.exports = nextConfig

@@ -1,0 +1,8 @@
+# Target modern evergreen browsers to avoid legacy transforms/polyfills
+# Adjust as needed based on your audience/analytics
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Edge versions
+last 2 Safari versions
+not ie <= 11
+not op_mini all
