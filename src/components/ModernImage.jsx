@@ -11,7 +11,9 @@ const ModernImage = ({
   variant = "default",
   priority = false,
   glassmorphism = false,
-  animate = false
+  animate = false,
+  sizes: sizesProp,
+  quality
 }) => {
   if (!src || !alt) {
     console.error("ModernImage component requires 'src' and 'alt' props.");
@@ -86,7 +88,9 @@ const ModernImage = ({
         src={src}
         alt={alt}
         priority={priority}
-        sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 45vw"
+        sizes={sizesProp || "(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 45vw"}
+        quality={quality}
+        placeholder="blur"
         className="
           h-full w-full object-cover 
           transition-all duration-700 ease-out

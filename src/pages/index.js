@@ -116,6 +116,9 @@ export default function Home() {
                 variant="organic"
                 glassmorphism={true}
                 animate={true}
+                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 80vw, 45vw"
+                quality={70}
+                priority
                 containerClassName="relative  transform hover:scale-[1.02] transition-transform duration-700"
               />
             </motion.div>
