@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaWordpress, FaLaravel, FaSymfony } from "react-icons/fa"
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaWordpress, FaLaravel, FaSymfony, FaNodeJs, FaPython } from "react-icons/fa"
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si"
 
 // Composant de compétence avec icône et effet glassmorphism moderne
@@ -131,6 +131,16 @@ const SkillsGrid = () => {
     {
       name: "JavaScript",
       icon: <FaJs className="text-[#F7DF1E]" />,
+      category: "core",
+    },
+    {
+      name: "Node.js",
+      icon: <FaNodeJs className="text-[#339933]" />,
+      category: "core",
+    },
+    {
+      name: "Python",
+      icon: <FaPython className="text-[#3776AB]" />,
       category: "core",
     },
     {

@@ -175,10 +175,9 @@ const About = () => {
               
             </motion.div>
 
-            {/* Sections Skills, Experience, Education */}
-            <motion.div variants={itemVariants}>
-              <Skills />
-            </motion.div>
+          
+            
+           
 
             {/* Bouton Télécharger Mon CV */}
             <motion.div
@@ -199,15 +198,15 @@ const About = () => {
               </a>
             </motion.div>
 
-            <motion.div variants={itemVariants}>
-              <Experience />
-            </motion.div>
-            
-            <motion.div variants={itemVariants}>
-              <Education />
-            </motion.div>
+           
+              
+           
           </motion.div>
+         
         </Layout>
+          <Skills />
+         <Experience />
+          <Education />
       </main>
       <BackToTop />
     </>
