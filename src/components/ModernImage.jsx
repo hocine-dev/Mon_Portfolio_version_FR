@@ -13,7 +13,9 @@ const ModernImage = ({
   glassmorphism = false,
   animate = false,
   sizes: sizesProp,
-  quality
+  quality,
+  width,
+  height
 }) => {
   if (!src || !alt) {
     console.error("ModernImage component requires 'src' and 'alt' props.");
@@ -53,6 +55,17 @@ const ModernImage = ({
     }
   };
 
+  const imgClass = `
+          object-cover 
+          transition-all duration-700 ease-out
+          group-hover:scale-110
+          group-hover:brightness-110
+          group-hover:contrast-105
+          group-hover:saturate-110
+          filter
+          ${width && height ? '' : 'h-full w-full'}
+        `
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40, scale: 0.9, rotateX: 15 }}
@@ -88,18 +101,11 @@ const ModernImage = ({
         src={src}
         alt={alt}
         priority={priority}
-        sizes={sizesProp || "(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 45vw"}
-        quality={quality}
+        {...(width && height ? { width, height } : {})}
+        {...(!width && !height ? { sizes: sizesProp || "(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 45vw" } : {})}
+        {...(quality ? { quality } : {})}
         placeholder="blur"
-        className="
-          h-full w-full object-cover 
-          transition-all duration-700 ease-out
-          group-hover:scale-110
-          group-hover:brightness-110
-          group-hover:contrast-105
-          group-hover:saturate-110
-          filter
-        "
+        className={imgClass}
       />
 
       {/* Effet de brillance liquide (tendance 2025) */}
