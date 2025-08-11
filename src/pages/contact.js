@@ -15,6 +15,7 @@ import calendlyIcon from "../../public/images/svgs/calendy.png";
 import whatsappIcon from "../../public/images/svgs/whatsapp.svg";
 import linkedinIcon from "../../public/images/svgs/linkedin.svg";
 import githubIcon from "../../public/images/svgs/logo-github.svg";
+import maltIcon from "../../public/images/svgs/malt.webp";
 
 // --- Variants pour Framer Motion ---
 const containerVariants = {
@@ -136,6 +137,15 @@ export default function Contact() {
                 className="w-6 m-5"
               >
                 <Image src={githubIcon} alt="GitHub" style={{ scale: "2.5" }} />
+              </a>
+              <a
+                href="https://www.malt.fr/profile/hocinedev1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profil Malt de Hocine HAMAMA"
+                className="w-6 m-5"
+              >
+                <Image src={maltIcon} alt="Malt" style={{ scale: "2.5" }} />
               </a>
             </div>
           </div>
