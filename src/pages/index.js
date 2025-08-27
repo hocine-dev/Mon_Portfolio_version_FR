@@ -68,10 +68,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Créer un site internet pour particulier à Paris | Développeur web freelance</title>
+        <title>Créer un site internet à Paris | Développeur web à Paris</title>
         <meta
           name="description"
-          content="Vous êtes particulier à Paris et cherchez à créer un site internet ? Développeur web freelance, je réalise la création de site vitrine, blog ou portfolio pour particuliers à Paris. Contactez-moi pour un site web sur-mesure, rapide et moderne."
+          content="Vous êtes à Paris et vous cherchez à créer votre site internet ? Développeur web à Paris, je réalise la création de site vitrine, blog ou portfolio,site pour une nouvelle marque.Contactez-moi pour un site web sur-mesure, rapide et moderne avec un budget correct."
         />
       </Head>
 
