@@ -68,11 +68,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hocine HAMAMA | Développeur Web Full Stack</title>
+        <title>Créer un site internet pour particulier à Paris | Développeur web freelance</title>
         <meta
           name="description"
-          content="
-         Développeur Web Full-Stack freelance à Paris, expert en Next.js, React et SEO. Créez votre site web performant et optimisé pour les moteurs de recherche. Contactez-moi pour vos projets à Paris et Île-de-France."
+          content="Vous êtes particulier à Paris et cherchez à créer un site internet ? Développeur web freelance, je réalise la création de site vitrine, blog ou portfolio pour particuliers à Paris. Contactez-moi pour un site web sur-mesure, rapide et moderne."
         />
       </Head>
 
@@ -146,7 +145,10 @@ export default function Home() {
               >
                 <div className="absolute -inset-6 bg-gradient-to-r from-blue-100/50 to-red-100/50 dark:from-blue-950/30 dark:to-red-950/30 rounded-3xl blur-sm opacity-50" />
                 <p className="relative my-4 text-base font-medium !text-left xs:px-3 leading-relaxed bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/50 dark:border-gray-700/50 shadow-sm">
-                  Je suis un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">développeur web Full Stack freelance basé à Paris</strong>, j&apos;ai plus de 5 ans d&apos;experience dans le domaine de web, je suis spécialisé dans la création de <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">sites web performants avec Next.js et React js</strong>. Mon expertise inclut l&apos;<strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">optimisation SEO</strong> pour garantir une visibilité maximale. Que vous soyez une entreprise ou un particulier, Contactez-moi dès maintenant pour concrétiser vos projets web et attirer de nouveaux clients.
+                  Je suis un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">développeur web freelance</strong> avec plus de 5 ans d’expérience.<br /><br />
+                  Si vous êtes à <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Paris</strong> et que vous souhaitez créer votre site internet, alors vous êtes au bon endroit.<br />
+                  Je vous accompagne dans la création de votre <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">site internet sur-mesure</strong>, que ce soit un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">site vitrine</strong>, un site pour lancer une nouvelle marque, un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">blog</strong> ou un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">portfolio</strong>. Je suis là pour vous aider à le créer, avec un design moderne, adapté à vos besoins et optimisé pour les résultats de <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">recherche sur Google</strong>.<br /><br />
+                  Profitez d&apos;un service <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">professionnel</strong> avec un <strong className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">budget</strong> correct et sans passer par une agence, <Link href="/contact" className="underline text-blue-700 hover:text-red-600 font-semibold">contactez-moi</Link> pour commencer.
                 </p>
               </motion.div>
 
