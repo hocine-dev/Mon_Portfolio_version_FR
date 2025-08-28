@@ -85,6 +85,11 @@ const Footer = () => {
                 Hocine HAMAMA
               </Link>
             </div>
+            <div className="flex flex-row items-center justify-center gap-4 mt-2">
+              <Link href="/mentions-legales" className="underline hover:text-blue-700 text-xs">Mentions légales</Link>
+              <span className="text-gray-400">|</span>
+              <Link href="/politique-confidentialite" className="underline hover:text-blue-700 text-xs">Politique de confidentialité</Link>
+            </div>
           </div>
         </div>
       </Layout>
