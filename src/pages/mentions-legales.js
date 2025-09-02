@@ -19,9 +19,14 @@ export default function MentionsLegales() {
         <h2 className="text-xl font-semibold mt-6 mb-2">Portage salarial</h2>
         <p>
           Activit&eacute; exerc&eacute;e en portage salarial aupr&egrave;s de&nbsp;:<br />
-          <strong>FreedomPortage SARL</strong><br />
-          Adresse&nbsp;: BT D – Les Terrasses d&rsquo;agr&eacute;ment, Impasse Charning Charp, 97150 Saint Martin<br />
-          SIRET&nbsp;: 81013182100086
+          <strong>RH SOLUTION SAS</strong><br />
+          SIREN&nbsp;: 907 835 508<br />
+          SIRET&nbsp;: 907 835 508 00017<br />
+          Adresse&nbsp;: 13 RUE SAINTE URSULE, 31000 TOULOUSE<br />
+          Forme juridique&nbsp;: SAS, soci&eacute;t&eacute; par actions simplifi&eacute;e<br />
+          Activit&eacute; principale&nbsp;: Autre mise &agrave; disposition de ressources humaines (NAF/APE 78.30Z)<br />
+          Capital social&nbsp;: 1&nbsp;000&nbsp;&euro;<br />
+          Date de cr&eacute;ation&nbsp;: 15/11/2021
         </p>
         <h2 className="text-xl font-semibold mt-6 mb-2">Hébergeur</h2>
         <p>
